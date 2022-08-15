@@ -18,22 +18,21 @@ sub main {
 		my $name = $_;
 		qq{
 			(?<Perl$name>
-				(?{ push \@stack, $name => })
-				(?{ local %match = ( name => $name => , position => pos(), stack => [ \@stack ], ) })
+				(?{ local \$parent = \\%match })
+				(?{ local %match = ( name => $name => , position => pos(), parent => \$parent, ) })
 				( (?>(?&PerlStd$name)) )
 				(?{ \$match{text} = \$^N })
 				(?{ push \@matches, \\%match })
 			|
-				(?{ pop \@stack })
 				(?!)
 			)
 		};
-	} grep { /(SubroutineDeclaration|Statement)/ } @rule_names;
+	} grep $_ !~ /^(Label|PodSequence|OWS|NWS)$/, @rule_names;
 
-	our (@matches, @stack, %match);
+	our (@matches, $parent, %match);
 	local @matches = ();
-	local @stack = ();
-	local %match;
+	local $parent;
+	local %match = undef;
 	my $re = do {
 		use re 'eval';
 		my $zz = qq{
@@ -60,7 +59,7 @@ sub main {
 
 	if( $code =~ $re ) {
 		my @sorted = nsort_by { $_->{position} } @matches;
-		use DDP; p @sorted;
+		use Data::Dumper::Concise; print Dumper(\@sorted);
 	}
 
 }
