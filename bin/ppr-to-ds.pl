@@ -6,13 +6,21 @@ use lib "$FindBin::Bin/../lib";
 use strict;
 use warnings;
 
-use PPR::X;
-use List::UtilsBy qw(nsort_by);
+use feature qw(say);
 
-my $base_grammar = $PPR::X::GRAMMAR;
+use PPR::X;
+use Babble::Grammar;
+use Role::Tiny ();
+
+use List::UtilsBy qw(nsort_by);
+use Data::Dumper::Concise;
 
 sub main {
-	my @rule_names = $base_grammar =~ /<PerlStd([^>]+)>/msg;
+	my $grammar = Babble::Grammar->new;
+	Role::Tiny->apply_roles_to_object( $grammar, qw(PPP::Babble::Grammar::Role::TryTiny) );
+	my @rule_names = keys %{ $grammar->base_rule_names };
+
+	my $grammar_re = $grammar->grammar_regexp;
 
 	my @extraction_re_parts = map {
 		my $name = $_;
@@ -42,26 +50,20 @@ sub main {
 				@extraction_re_parts
 			)
 
-			$base_grammar
+			$grammar_re
 		};
 		qr{$zz}xmso;
 	};
 
-	my $code = q{
-		sub where {
-			my $test = 1 + 1;
-			if( $test > 42 ) {
-				return 'hey';
-			}
-			return $test;
-		}
-	};
+	my $code = do { local $/; <> };
 
 	if( $code =~ $re ) {
 		my @sorted = nsort_by { $_->{position} } @matches;
-		use Data::Dumper::Concise; print Dumper(\@sorted);
+		print Dumper(\@sorted);
+	} else {
+		say "Error:";
+		say $PPR::X::ERROR;
 	}
-
 }
 
 main;
