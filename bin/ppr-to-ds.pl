@@ -43,7 +43,7 @@ sub main {
 	local %match = ();
 	my $re = do {
 		use re 'eval';
-		my $zz = qq{
+		my $combined = qq{
 			\\A (?>(?&PerlEntireDocument)) \\Z
 
 			(?(DEFINE)
@@ -52,7 +52,7 @@ sub main {
 
 			$grammar_re
 		};
-		qr{$zz}xmso;
+		qr{$combined}xmso;
 	};
 
 	my $code = do { local $/; <> };
