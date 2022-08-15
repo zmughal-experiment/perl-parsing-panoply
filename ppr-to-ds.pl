@@ -32,11 +32,11 @@ sub main {
 	our (@matches, $parent, %match);
 	local @matches = ();
 	local $parent;
-	local %match = undef;
+	local %match = ();
 	my $re = do {
 		use re 'eval';
 		my $zz = qq{
-			(?>(?&PerlEntireDocument))
+			\\A (?>(?&PerlEntireDocument)) \\Z
 
 			(?(DEFINE)
 				@extraction_re_parts
