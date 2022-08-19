@@ -81,3 +81,10 @@ change how the code is interpreted. They might be implemented as keywords.
         + tied variables: <https://metacpan.org/pod/Type::Tie>
         + magic: <https://metacpan.org/pod/Lexical::TypeTiny> (uses Variable::Magic)
         + <https://metacpan.org/pod/Variable::Declaration> (uses Keyword::Simple + Type::Tie)
+    * checking / constraints
+        + <https://metacpan.org/pod/Type::Tiny>
+        + <https://metacpan.org/pod/Mouse::Util::TypeConstraints>
+        + <https://metacpan.org/pod/Specio>
+        + <https://metacpan.org/pod/Moose::Meta::TypeConstraint>
+            + <https://metacpan.org/pod/MooseX::Types>
+        + <https://metacpan.org/pod/Data::Types>
