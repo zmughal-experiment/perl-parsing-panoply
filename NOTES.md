@@ -137,3 +137,15 @@ change how the code is interpreted. They might be implemented as keywords.
 - Struct
     * <https://metacpan.org/pod/Struct::Dumb>
     * <https://metacpan.org/pod/MooX::Struct>
+- Subroutine tricks (not really new syntax)
+    * <https://metacpan.org/pod/PerlX::Maybe>
+    * <https://metacpan.org/pod/curry>
+    * <https://metacpan.org/pod/Sub::Operable>
+    * <https://metacpan.org/pod/Async::Methods>
+    * <https://metacpan.org/pod/Object::Util>
+    * <https://metacpan.org/pod/Safe::Isa>
+    * <https://metacpan.org/pod/Object::Tap>
+    * <https://metacpan.org/pod/Try::Chain>
+    * Infix operators as subs
+        + <https://metacpan.org/pod/Sub::Infix>
+    * <https://metacpan.org/pod/Method::Slice>
