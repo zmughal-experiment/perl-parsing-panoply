@@ -44,3 +44,17 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/Sub::SymMethod>
 - `defer`
     * XS keyword plugin: <https://metacpan.org/pod/Syntax::Keyword::Defer>
+- OO
+    * <https://metacpan.org/pod/Object::Pad>
+    * <https://metacpan.org/pod/Moops>
+    * <https://metacpan.org/pod/Zydeco>
+    * <https://metacpan.org/pod/Dios>
+        + and multiple dispatch
+    * <https://metacpan.org/pod/Class::Struct>
+    * <https://metacpan.org/pod/Mic>
+    * <https://metacpan.org/pod/Mite>
+    * Moose, Mouse, Moo, Mo, Mu, Role::Tiny, Class::Tiny
+        + <https://metacpan.org/dist/MooseX-MungeHas>
+        + <https://metacpan.org/pod/Sub::HandlesVia>
+        + <https://metacpan.org/pod/CLI::Osprey>
+        + <https://metacpan.org/pod/MooX::Should>
