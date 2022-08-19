@@ -35,3 +35,10 @@ change how the code is interpreted. They might be implemented as keywords.
         + <https://metacpan.org/pod/Smart::Args::TypeTiny>
     * PPR-based source filter: <https://metacpan.org/pod/Method::Signatures::PP>
     * <https://metacpan.org/pod/signatures> (uses B::Hooks::Parser)
+- multiple dispatch
+    * XS keyword plugin: <https://metacpan.org/pod/Syntax::Keyword::MultiSub>
+    * attributes: <https://metacpan.org/pod/Sub::Multi::Tiny>
+    * <https://metacpan.org/pod/Class::Multimethods>
+        + <https://www.foo.be/docs/tpj/issues/vol5_1/tpj0501-0010.html>
+    * <https://metacpan.org/pod/Sub::MultiMethod>
+    * <https://metacpan.org/pod/Sub::SymMethod>
