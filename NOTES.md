@@ -24,3 +24,6 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/TryCatch> (uses Devel::Declare)
     * XS keyword plugin: <https://metacpan.org/pod/Syntax::Feature::Try>
     * <https://metacpan.org/pod/Try> (uses Devel::CallParser + Try::Tiny)
+- `async`/`await`
+    * XS keyword plugin: <https://metacpan.org/pod/Future::AsyncAwait>
+    * PPR-based source filter: <https://metacpan.org/pod/PerlX::AsyncAwait>
