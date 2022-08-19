@@ -42,3 +42,5 @@ change how the code is interpreted. They might be implemented as keywords.
         + <https://www.foo.be/docs/tpj/issues/vol5_1/tpj0501-0010.html>
     * <https://metacpan.org/pod/Sub::MultiMethod>
     * <https://metacpan.org/pod/Sub::SymMethod>
+- `defer`
+    * XS keyword plugin: <https://metacpan.org/pod/Syntax::Keyword::Defer>
