@@ -132,3 +132,8 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/failures>
     * <https://metacpan.org/pod/Exception::Class>
     * <https://metacpan.org/pod/Throwable>
+- Enum
+    * <https://metacpan.org/pod/enum>
+- Struct
+    * <https://metacpan.org/pod/Struct::Dumb>
+    * <https://metacpan.org/pod/MooX::Struct>
