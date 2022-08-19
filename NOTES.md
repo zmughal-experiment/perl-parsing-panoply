@@ -104,3 +104,22 @@ change how the code is interpreted. They might be implemented as keywords.
             + <https://metacpan.org/pod/Assert::Conditional>
             + <https://metacpan.org/pod/Carp::Assert::More>
             + <https://metacpan.org/pod/PerlX::Assert>
+        + interface
+            + <https://metacpan.org/pod/Function::Interface>
+        + older
+            + <https://metacpan.org/pod/typesafety>
+            + <https://metacpan.org/pod/types>
+            + <https://metacpan.org/dist/Devel-TypeCheck>
+    * interoperability with machine types
+        + <https://metacpan.org/pod/FFI::Platypus::Type>
+        + <https://metacpan.org/pod/Glib>, <https://metacpan.org/pod/Glib::Object::Introspection>
+        + <https://metacpan.org/pod/PDL::Types>
+        + <https://metacpan.org/pod/Inline::Struct>
+        + <https://metacpan.org/pod/Convert::Binary::C>
+        + <https://metacpan.org/pod/Types::CLike>
+            + <https://metacpan.org/pod/MooX::Types::CLike>
+        + <https://metacpan.org/pod/Types::Numbers>
+        + <https://metacpan.org/pod/Data::Float>
+        + <https://metacpan.org/pod/Data::Integer>
+        + <https://metacpan.org/pod/Math::Float128>
+    * <https://metacpan.org/pod/Types::Algebraic>
