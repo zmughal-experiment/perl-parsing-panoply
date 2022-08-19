@@ -58,3 +58,13 @@ change how the code is interpreted. They might be implemented as keywords.
         + <https://metacpan.org/pod/Sub::HandlesVia>
         + <https://metacpan.org/pod/CLI::Osprey>
         + <https://metacpan.org/pod/MooX::Should>
+    * method resolution
+        + <https://metacpan.org/pod/MRO::Compat>
+        + <https://metacpan.org/pod/Class::C3>
+        + <https://metacpan.org/pod/MRO::Magic>
+        + <https://metacpan.org/pod/subs::auto>
+        + <https://metacpan.org/pod/NEXT>
+        + <https://metacpan.org/pod/next::XS>
+        + <https://metacpan.org/pod/CLASS>
+        + <https://metacpan.org/pod/SUPER>
+    * <https://metacpan.org/pod/Object::Extend>
