@@ -27,3 +27,11 @@ change how the code is interpreted. They might be implemented as keywords.
 - `async`/`await`
     * XS keyword plugin: <https://metacpan.org/pod/Future::AsyncAwait>
     * PPR-based source filter: <https://metacpan.org/pod/PerlX::AsyncAwait>
+- signatures + parameters
+    * XS keyword plugin: <https://metacpan.org/pod/Function::Parameters>
+    * <https://metacpan.org/pod/Method::Signatures> (uses Devel::Declare)
+    * <https://metacpan.org/pod/Method::Signatures::Simple> (uses Devel::Declare)
+    * <https://metacpan.org/pod/Smart::Args>
+        + <https://metacpan.org/pod/Smart::Args::TypeTiny>
+    * PPR-based source filter: <https://metacpan.org/pod/Method::Signatures::PP>
+    * <https://metacpan.org/pod/signatures> (uses B::Hooks::Parser)
