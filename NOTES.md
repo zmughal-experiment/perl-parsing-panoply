@@ -88,3 +88,19 @@ change how the code is interpreted. They might be implemented as keywords.
         + <https://metacpan.org/pod/Moose::Meta::TypeConstraint>
             + <https://metacpan.org/pod/MooseX::Types>
         + <https://metacpan.org/pod/Data::Types>
+        + assertion / DbC
+            + <https://metacpan.org/pod/Sub::Contract>
+            + <https://metacpan.org/pod/Class::DbC>
+            + <https://metacpan.org/pod/Class::Contract>
+            + <https://metacpan.org/pod/Attribute::Contract>
+            + <https://metacpan.org/pod/Sub::Assert::Nothing>
+            + <https://metacpan.org/pod/LIVR::Contract>
+            + <https://metacpan.org/pod/MooseX::Contract>
+            + <https://metacpan.org/pod/Class::Agreement>
+            + <https://metacpan.org/pod/Assert::Refute>
+            + <https://metacpan.org/pod/assertions>
+            + <https://metacpan.org/pod/Generic::Assertions>
+            + <https://metacpan.org/pod/Devel::Assert>
+            + <https://metacpan.org/pod/Assert::Conditional>
+            + <https://metacpan.org/pod/Carp::Assert::More>
+            + <https://metacpan.org/pod/PerlX::Assert>
