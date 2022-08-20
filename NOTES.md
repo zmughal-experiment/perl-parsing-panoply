@@ -288,3 +288,16 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://www.youtube.com/watch?v=fVnmYzJfy5s>
     * <https://www.youtube.com/watch?v=ob6YHpcXmTg>
 - [The Keyword Question · Issue #273 · Perl-Critic/PPI · GitHub](https://github.com/Perl-Critic/PPI/issues/273)
+
+# Design patterns
+
+- <http://savannah.nongnu.org/projects/perlpatbook/>
+    * <https://metacpan.org/release/SWALTERS/Object-PerlDesignPatterns-0.03/view/PerlDesignPatterns.pm>
+    * <http://backpan.perl.org/authors/id/S/SW/SWALTERS/Perl_Design_Patterns_book_20021008.html>
+    * <https://web.archive.org/web/20170305195947/http://www.perldesignpatterns.com/>
+    * <https://web.archive.org/web/20031202213732/http://wiki.slowass.net:80/?PerlDesignPatterns>
+    * <https://wiki.c2.com/?PerlPatternsRepository>
+    * <https://en.wikipedia.org/wiki/Perl_Design_Patterns_Book>
+- <https://www.perl.com/pub/2003/06/13/design1.html/>
+- <https://github.com/jeffa/DesignPatterns-Perl>
+- <https://github.com/ynonp/perl-design-patterns>
