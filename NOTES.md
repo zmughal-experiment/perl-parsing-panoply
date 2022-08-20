@@ -149,3 +149,134 @@ change how the code is interpreted. They might be implemented as keywords.
     * Infix operators as subs
         + <https://metacpan.org/pod/Sub::Infix>
     * <https://metacpan.org/pod/Method::Slice>
+- Changing `goto`: <https://metacpan.org/pod/Goto::Cached>
+- Aspect-oriented programming
+    * <https://metacpan.org/pod/Aspect>
+    * <https://metacpan.org/pod/Class::Method::Modifiers>
+- FP
+    * <https://metacpan.org/pod/FunctionalPerl>
+    * <https://hop.perl.plover.com/>
+    * <https://metacpan.org/pod/Perlude>
+    * <https://metacpan.org/pod/List::Gen>
+    * <https://metacpan.org/pod/HOI::Match>
+    * <https://metacpan.org/pod/List::MapMulti>
+    * <https://metacpan.org/pod/UnderscoreJS>
+- Logic programming
+    * <https://metacpan.org/pod/Logic>
+    * <https://metacpan.org/pod/AI::Prolog>
+- Destructuring assignment
+    * <https://metacpan.org/pod/DestructAssign>
+- Return context
+    * <https://metacpan.org/pod/Want>
+    * <https://metacpan.org/pod/Context::Handle>
+    * <https://metacpan.org/pod/Object::Result>
+    * <https://metacpan.org/pod/Array::Slice>
+    * <https://metacpan.org/pod/Contextual::Return>
+    * <https://metacpan.org/pod/Lvalue>
+    * <https://metacpan.org/pod/MooX::LvalueAttribute>
+    * <https://metacpan.org/pod/LV>
+    * <https://metacpan.org/pod/Sub::Lvalue>
+- autoboxing
+    * <https://metacpan.org/pod/autobox>
+- Operator overloading
+    * <https://metacpan.org/pod/IO::All>
+- Runtime handling of function calls
+    * <https://metacpan.org/pod/Autoload::AUTOCAN>
+    * <https://metacpan.org/pod/selfvars::autoload>
+        + <https://metacpan.org/pod/selfvars> (uses tie, for OO)
+    * <https://metacpan.org/pod/Inline::Java>
+    * <https://metacpan.org/pod/Inline::Python>
+    * <https://metacpan.org/pod/Tkx>
+- <https://metacpan.org/pod/indirect>
+    * <https://shadow.cat/blog/matt-s-trout/indirect-but-still-fatal/>
+    * <http://blogs.perl.org/users/rurban/2013/02/no-indirect-considered-harmful.html>
+
+# Extending the parser
+
+- [[LeoNerd's programming thoughts: Writing a Perl Core Feature|https://leonerds-code.blogspot.com/2021/02/writing-perl-core-feature.html]]
+- <https://metacpan.org/pod/XS::Parse::Keyword>
+    * <https://metacpan.org/pod/XS::Parse::Infix>
+- Keywords in Pure Perl
+    * <https://metacpan.org/pod/Keyword::Simple>
+    * <https://metacpan.org/pod/Keyword::Declare>
+- (deprecated) <https://metacpan.org/pod/Devel::Declare>
+- <https://metacpan.org/pod/Devel::CallParser>
+- <https://metacpan.org/pod/B::Hooks::Parser>
+- Source filters:
+    * <https://metacpan.org/pod/Filter::Simple>
+    * <https://metacpan.org/pod/Filter::Util::Call>
+    * <https://metacpan.org/dist/Lingua-Romana-Perligata>
+        + <https://metacpan.org/dist/Lingua-Romana-Perligata/view/lib/Lingua/Romana/Perligata.pm>
+        + <https://users.monash.edu/~damian/papers/HTML/Perligata.html>
+    * <https://metacpan.org/pod/Lingua::Sinica::PerlYuYan>
+
+# Extending the OP tree / interpreter
+
+- <https://metacpan.org/pod/B::C>
+
+- B::Hooks::
+    * <https://metacpan.org/pod/B::Hooks::Parser>
+    * <https://metacpan.org/pod/B::Hooks::AtRuntime>
+    * <https://metacpan.org/pod/B::Hooks::OP::Check>
+    * <https://metacpan.org/pod/B::Hooks::EndOfScope>
+    * <https://metacpan.org/pod/B::Hooks::OP::PPAddr>
+    * <https://metacpan.org/pod/B::Hooks::OP::Annotation>
+    * <https://metacpan.org/pod/B::Hooks::XSUB::CallAsOp>
+    * <https://metacpan.org/pod/B::Hooks::OP::Check::LeaveEval>
+    * <https://metacpan.org/pod/B::Hooks::OP::Check::StashChange>
+    * <https://metacpan.org/pod/B::Hooks::OP::Check::EntersubForCV>
+
+- <https://metacpan.org/pod/Faster>
+- <http://perlmulticore.schmorp.de/>
+    * <https://metacpan.org/pod/Coro::Multicore>
+
+# Changing semantics
+
+- <https://metacpan.org/pod/Data::Alias>
+- <https://metacpan.org/pod/Variable::Magic>
+- <https://metacpan.org/pod/Acme::CPANModules::MagicVariableTechnique>
+
+- <https://metacpan.org/pod/autodie>
+    * <https://metacpan.org/pod/autodie::variables>
+- <https://metacpan.org/dist/autovivification>
+- <https://metacpan.org/pod/underscore>
+
+
+# Defer running
+
+- <https://metacpan.org/pod/B::Hooks::EndOfScope>
+- <https://metacpan.org/pod/AtExit>
+- <https://metacpan.org/pod/Scope::OnExit>
+- <https://metacpan.org/pod/Scope::Cleanup>
+- <https://metacpan.org/pod/Scope::Guard>
+- <https://metacpan.org/pod/Guard>
+- <https://metacpan.org/pod/End>
+- <https://metacpan.org/pod/Perl::AtEndOfScope>
+- <https://metacpan.org/pod/ReleaseAction>
+- <https://metacpan.org/pod/Scope::local_OnExit>
+- <https://metacpan.org/pod/Sub::ScopeFinalizer>
+- <https://metacpan.org/pod/Value::Canary>
+
+# Importing into caller
+
+- <https://metacpan.org/pod/Import::Into>
+- `strict` and more <https://metacpan.org/pod/strictures>
+- Miscellaneous that import `strict`:
+    * `Modern::Perl`
+    * `Mojolicious::Lite`, `Mojo::Base`
+    * `Dancer`
+    * `Moo`, `Moo::Role`
+    * `Test::Most`
+    * `Mu`, `Mu::Role`
+    * `common::sense`
+- `Syntax::Feature::*`: <https://metacpan.org/pod/syntax>
+- <https://metacpan.org/dist/perl5i>
+- <https://metacpan.org/pod/new>
+- <https://metacpan.org/pod/Acme::Very::Modern::Perl>
+- <https://metacpan.org/pod/Acme::CPANModules::ModernPreambles>
+- <https://metacpan.org/pod/Dir::Self> (`__DIR__` uses `caller`)
+
+# Parsing / recognising
+
+- See § Parsers at <https://orbital-transfer.github.io/doc/development/language/perl/>
+- [The Keyword Question · Issue #273 · Perl-Critic/PPI · GitHub](https://github.com/Perl-Critic/PPI/issues/273)
