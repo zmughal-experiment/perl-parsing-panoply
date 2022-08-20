@@ -285,4 +285,6 @@ change how the code is interpreted. They might be implemented as keywords.
 # Parsing / recognising
 
 - See § Parsers at <https://orbital-transfer.github.io/doc/development/language/perl/>
+    * <https://www.youtube.com/watch?v=fVnmYzJfy5s>
+    * <https://www.youtube.com/watch?v=ob6YHpcXmTg>
 - [The Keyword Question · Issue #273 · Perl-Critic/PPI · GitHub](https://github.com/Perl-Critic/PPI/issues/273)
