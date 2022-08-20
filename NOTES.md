@@ -192,6 +192,8 @@ change how the code is interpreted. They might be implemented as keywords.
 - <https://metacpan.org/pod/indirect>
     * <https://shadow.cat/blog/matt-s-trout/indirect-but-still-fatal/>
     * <http://blogs.perl.org/users/rurban/2013/02/no-indirect-considered-harmful.html>
+- <https://metacpan.org/pod/Rubyish>
+    * <https://metacpan.org/pod/PerlX::MethodCallWithBlock>
 
 # Extending the parser
 
