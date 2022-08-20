@@ -215,6 +215,11 @@ change how the code is interpreted. They might be implemented as keywords.
 
 - <https://metacpan.org/pod/B::C>
 
+- <https://metacpan.org/pod/Opcode>
+    * <https://metacpan.org/pod/Safe>
+    * <https://metacpan.org/pod/Eval::Safe>
+    * <https://metacpan.org/pod/Safe::Hole>
+
 - B::Hooks::
     * <https://metacpan.org/pod/B::Hooks::Parser>
     * <https://metacpan.org/pod/B::Hooks::AtRuntime>
