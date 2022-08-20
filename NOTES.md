@@ -68,6 +68,7 @@ change how the code is interpreted. They might be implemented as keywords.
         + <https://metacpan.org/pod/CLASS>
         + <https://metacpan.org/pod/SUPER>
     * <https://metacpan.org/pod/Object::Extend>
+    * <https://metacpan.org/pod/Package::Variant>
 - Operators
     * Smart-match
         + <https://metacpan.org/pod/match::smart>
