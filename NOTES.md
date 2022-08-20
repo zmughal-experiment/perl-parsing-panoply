@@ -179,6 +179,7 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/Sub::Lvalue>
 - autoboxing
     * <https://metacpan.org/pod/autobox>
+    * <https://metacpan.org/pod/autobox::Core>
 - Operator overloading
     * <https://metacpan.org/pod/IO::All>
 - Runtime handling of function calls
