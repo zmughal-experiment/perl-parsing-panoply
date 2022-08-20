@@ -298,6 +298,7 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://web.archive.org/web/20031202213732/http://wiki.slowass.net:80/?PerlDesignPatterns>
     * <https://wiki.c2.com/?PerlPatternsRepository>
     * <https://en.wikipedia.org/wiki/Perl_Design_Patterns_Book>
+    * Powered by <https://github.com/scrottie/TinyWiki>
 - <https://www.perl.com/pub/2003/06/13/design1.html/>
 - <https://github.com/jeffa/DesignPatterns-Perl>
 - <https://github.com/ynonp/perl-design-patterns>
