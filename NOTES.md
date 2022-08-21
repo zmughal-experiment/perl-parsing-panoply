@@ -213,6 +213,7 @@ change how the code is interpreted. They might be implemented as keywords.
         + <https://metacpan.org/dist/Lingua-Romana-Perligata/view/lib/Lingua/Romana/Perligata.pm>
         + <https://users.monash.edu/~damian/papers/HTML/Perligata.html>
     * <https://metacpan.org/pod/Lingua::Sinica::PerlYuYan>
+    * <https://metacpan.org/pod/macro>
 
 # Extending the OP tree / interpreter
 
