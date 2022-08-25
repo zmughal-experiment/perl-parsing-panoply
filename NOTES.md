@@ -79,6 +79,15 @@ change how the code is interpreted. They might be implemented as keywords.
         + <https://metacpan.org/pod/Syntax::Feature::In>
     * `isa`
         + <https://metacpan.org/pod/isa>
+    * For future perl infix operator support as described by <https://metacpan.org/pod/XS::Parse::Infix>
+        + equ
+            + <https://metacpan.org/pod/Syntax::Operator::Equ>
+        + in
+            + <https://metacpan.org/pod/Syntax::Operator::In>
+        + zip
+            + <https://metacpan.org/pod/Syntax::Operator::Zip>
+        + divides
+            + <https://metacpan.org/pod/Syntax::Operator::Divides>
 - Types
     * syntax
         + attributes: <https://metacpan.org/pod/Attribute::Types>
@@ -202,7 +211,7 @@ change how the code is interpreted. They might be implemented as keywords.
 
 - [[LeoNerd's programming thoughts: Writing a Perl Core Feature|https://leonerds-code.blogspot.com/2021/02/writing-perl-core-feature.html]]
 - <https://metacpan.org/pod/XS::Parse::Keyword>
-    * <https://metacpan.org/pod/XS::Parse::Infix>
+    * <https://metacpan.org/pod/XS::Parse::Infix> is not yet available to work in non-patched Perl
 - Keywords in Pure Perl
     * <https://metacpan.org/pod/Keyword::Simple>
     * <https://metacpan.org/pod/Keyword::Declare>
