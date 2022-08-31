@@ -145,6 +145,8 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/Readonly>
     * <https://metacpan.org/pod/Const::Fast>
         + <https://metacpan.org/pod/Const::Exporter>
+    * <https://metacpan.org/pod/Memoize::Lift>
+    * <https://metacpan.org/pod/Keyword::Value>
 - Exception objects
     * <https://metacpan.org/pod/failures>
     * <https://metacpan.org/pod/Exception::Class>
