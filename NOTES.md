@@ -168,6 +168,12 @@ change how the code is interpreted. They might be implemented as keywords.
     * Infix operators as subs
         + <https://metacpan.org/pod/Sub::Infix>
     * <https://metacpan.org/pod/Method::Slice>
+- methods applied to default object
+    * <https://metacpan.org/pod/methods::import>
+    * <https://metacpan.org/pod/Object::Import>
+    * <https://metacpan.org/pod/with> (deprecated)
+    * <https://metacpan.org/pod/Scope::With>
+        + depends on <https://metacpan.org/release/CHOCOLATE/mysubs-1.14> (on BackPAN only)
 - Changing `goto`: <https://metacpan.org/pod/Goto::Cached>
 - Aspect-oriented programming
     * <https://metacpan.org/pod/Aspect>
