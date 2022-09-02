@@ -1,3 +1,8 @@
+# Background
+
+- [[Far More than Everything You've Ever Wanted to Know about Prototypes in Perl -- by Tom Christiansen|https://www.perlmonks.org/?node_id=861966]]
+- [[The Universe of Discourse : Guess what this does (solution)|https://blog.plover.com/2014/07/17/]]
+
 # Syntax added in core Perl
 
 - <https://metacpan.org/pod/feature>
