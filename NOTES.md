@@ -185,7 +185,13 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/Class::Method::Modifiers>
 - FP
     * <https://metacpan.org/pod/FunctionalPerl>
+    * Built-in: <https://metacpan.org/pod/List::Util>
+    * <https://metacpan.org/pod/List::AllUtils>
+        + <https://metacpan.org/pod/List::SomeUtils>
+        + <https://metacpan.org/pod/List::UtilsBy>
+    * <https://metacpan.org/pod/List::MoreUtils>
     * <https://hop.perl.plover.com/>
+    * <https://metacpan.org/pod/fp>
     * <https://metacpan.org/pod/Perlude>
     * <https://metacpan.org/pod/List::Gen>
     * <https://metacpan.org/pod/HOI::Match>
