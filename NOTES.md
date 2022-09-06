@@ -26,6 +26,8 @@ change how the code is interpreted. They might be implemented as keywords.
 - `try`/`catch`
     * XS keyword plugin: <https://metacpan.org/pod/Syntax::Keyword::Try>
     * subs: <https://metacpan.org/pod/Try::Tiny>
+        + <https://metacpan.org/pod/Try::Tiny::Tiny>
+    * subs: <https://metacpan.org/pod/Try::Catch>
     * <https://metacpan.org/pod/TryCatch> (uses Devel::Declare)
     * XS keyword plugin: <https://metacpan.org/pod/Syntax::Feature::Try>
     * <https://metacpan.org/pod/Try> (uses Devel::CallParser + Try::Tiny)
