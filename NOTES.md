@@ -68,6 +68,7 @@ change how the code is interpreted. They might be implemented as keywords.
         + <https://metacpan.org/pod/Sub::HandlesVia>
         + <https://metacpan.org/pod/CLI::Osprey>
         + <https://metacpan.org/pod/MooX::Should>
+        + <https://metacpan.org/pod/MooX::Const>
     * method resolution
         + <https://metacpan.org/pod/MRO::Compat>
         + <https://metacpan.org/pod/Class::C3>
@@ -150,6 +151,7 @@ change how the code is interpreted. They might be implemented as keywords.
         + <https://metacpan.org/pod/Math::Float128>
     * <https://metacpan.org/pod/Types::Algebraic>
 - Constants
+    * <http://neilb.org/reviews/constants.html>
     * <https://metacpan.org/pod/PerlX::Define>
     * <https://metacpan.org/pod/Readonly>
     * <https://metacpan.org/pod/Const::Fast>
@@ -162,6 +164,7 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/Throwable>
 - Enum
     * <https://metacpan.org/pod/enum>
+    * <https://metacpan.org/pod/Data::Enum>
 - Struct
     * <https://metacpan.org/pod/Struct::Dumb>
     * <https://metacpan.org/pod/MooX::Struct>
