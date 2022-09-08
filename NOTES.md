@@ -78,6 +78,8 @@ change how the code is interpreted. They might be implemented as keywords.
         + <https://metacpan.org/pod/CLASS>
         + <https://metacpan.org/pod/SUPER>
         + <https://metacpan.org/pod/mro::EVERY>
+        + <https://metacpan.org/pod/sealed>
+            + <https://www.sunstarsys.com/essays/perl7-sealed-lexicals>
     * <https://metacpan.org/pod/Object::Extend>
     * <https://metacpan.org/pod/Package::Variant>
     * <https://metacpan.org/pod/Object::Trampoline>
