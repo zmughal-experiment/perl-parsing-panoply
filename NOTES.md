@@ -54,6 +54,10 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/Sub::SmartMatch>
 - `defer`
     * XS keyword plugin: <https://metacpan.org/pod/Syntax::Keyword::Defer>
+- Pipeline / flow-based
+    * <https://metacpan.org/pod/Sub::Pipe> (operator overloading)
+    * <https://metacpan.org/pod/Piper>
+    * <https://metacpan.org/pod/Text::Pipe>
 - OO
     * <https://metacpan.org/pod/Object::Pad>
     * <https://metacpan.org/pod/Moops>
