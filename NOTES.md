@@ -273,6 +273,7 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/macro>
 - Related: `.pmc` files:
     * <https://metacpan.org/pod/Module::Compile>
+    * <https://perldoc.perl.org/functions/require>
 
 # Extending the OP tree / interpreter
 
