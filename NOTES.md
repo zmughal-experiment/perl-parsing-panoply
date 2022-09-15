@@ -300,6 +300,11 @@ change how the code is interpreted. They might be implemented as keywords.
 - <http://perlmulticore.schmorp.de/>
     * <https://metacpan.org/pod/Coro::Multicore>
 
+- <https://metacpan.org/pod/Scope::Upper>
+    * <https://metacpan.org/pod/return::thence>
+- <https://metacpan.org/pod/PadWalker>
+- <https://metacpan.org/pod/Scope::Escape>
+
 # Changing semantics
 
 - <https://metacpan.org/pod/Data::Alias>
