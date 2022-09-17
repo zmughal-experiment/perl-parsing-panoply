@@ -255,6 +255,10 @@ change how the code is interpreted. They might be implemented as keywords.
         + <https://metacpan.org/pod/CPS::Governor::IOAsync>
     * <https://metacpan.org/pod/IO::Lambda>
     * <https://metacpan.org/pod/Async::Chain>
+- Tail recursion (keywords to do `goto &sub`)
+    * <https://metacpan.org/pod/Sub::Call::Tail>
+    * <https://metacpan.org/pod/Sub::Call::Recur>
+    * <https://metacpan.org/pod/Keyword::TailRecurse>
 
 # Extending the parser
 
