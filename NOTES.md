@@ -250,6 +250,11 @@ change how the code is interpreted. They might be implemented as keywords.
         + <https://metacpan.org/pod/Coro::Generator>
         + <https://metacpan.org/pod/Generator::Object>
         + <https://metacpan.org/pod/Attribute::Generator>
+- Continuation-passing style
+    * <https://metacpan.org/pod/CPS> (deprecated in favour of Future / Future::AsyncAwait)
+        + <https://metacpan.org/pod/CPS::Governor::IOAsync>
+    * <https://metacpan.org/pod/IO::Lambda>
+    * <https://metacpan.org/pod/Async::Chain>
 
 # Extending the parser
 
