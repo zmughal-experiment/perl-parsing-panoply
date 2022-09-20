@@ -262,6 +262,9 @@ change how the code is interpreted. They might be implemented as keywords.
 - Memoisation
     * <https://metacpan.org/pod/Memoize>
     * <https://metacpan.org/pod/CHI::Memoize>
+- Reactive Extensions <https://reactivex.io/>>
+    * <https://metacpan.org/pod/RxPerl>
+    * <https://metacpan.org/pod/Ryu>
 
 # Extending the parser
 
