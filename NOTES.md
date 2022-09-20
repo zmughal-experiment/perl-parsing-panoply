@@ -265,6 +265,12 @@ change how the code is interpreted. They might be implemented as keywords.
 - Reactive Extensions <https://reactivex.io/>>
     * <https://metacpan.org/pod/RxPerl>
     * <https://metacpan.org/pod/Ryu>
+- Communicating sequential processes
+    * <https://metacpan.org/pod/Thread::Csp>
+- Parallel
+    * <https://metacpan.org/pod/Parallel::Map>
+- RPC
+    * <https://metacpan.org/pod/Object::Remote>
 
 # Extending the parser
 
