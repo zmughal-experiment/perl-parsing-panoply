@@ -299,6 +299,7 @@ change how the code is interpreted. They might be implemented as keywords.
 # Extending the OP tree / interpreter
 
 - <https://metacpan.org/pod/B::C>
+- <https://metacpan.org/pod/B::Generate>
 
 - <https://metacpan.org/pod/Opcode>
     * <https://metacpan.org/pod/Safe>
@@ -318,6 +319,8 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/B::Hooks::OP::Check::EntersubForCV>
 
 - <https://metacpan.org/pod/Faster>
+- <https://metacpan.org/pod/Runops::Optimized>
+- <https://metacpan.org/pod/Runops::Switch>
 - <http://perlmulticore.schmorp.de/>
     * <https://metacpan.org/pod/Coro::Multicore>
 
