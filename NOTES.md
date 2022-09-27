@@ -329,6 +329,14 @@ change how the code is interpreted. They might be implemented as keywords.
 - <https://metacpan.org/pod/PadWalker>
 - <https://metacpan.org/pod/Scope::Escape>
 
+- Attributes
+    * <https://metacpan.org/pod/Attribute::Handlers>
+    * <https://metacpan.org/pod/decorators>
+    * <https://metacpan.org/pod/Exporter::Attributes>
+    * <https://metacpan.org/pod/Sub::ArgShortcut>
+- <https://metacpan.org/pod/Sub::WhenBodied>
+- <https://metacpan.org/pod/Sub::Mutate>
+
 # Changing semantics
 
 - <https://metacpan.org/pod/Data::Alias>
