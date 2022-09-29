@@ -347,6 +347,8 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/autodie::variables>
 - <https://metacpan.org/dist/autovivification>
 - <https://metacpan.org/pod/underscore>
+- <https://metacpan.org/pod/optimize>
+    * has integer optimizations
 
 
 # Defer running
