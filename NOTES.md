@@ -392,6 +392,11 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://www.youtube.com/watch?v=fVnmYzJfy5s>
     * <https://www.youtube.com/watch?v=ob6YHpcXmTg>
 - [The Keyword Question · Issue #273 · Perl-Critic/PPI · GitHub](https://github.com/Perl-Critic/PPI/issues/273)
+- [Perl Cannot Be Parsed: A Formal Proof](https://perlmonks.org/?node_id=663393)
+    * <https://jeffreykegler.github.io/personal/undecide/TPR1.pdf>
+    * <https://jeffreykegler.github.io/personal/undecide/TPR2.pdf>
+    * <https://jeffreykegler.github.io/personal/undecide/TPR3.pdf>
+- https://perl.plover.com/NPC/
 
 # Design patterns
 
