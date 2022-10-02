@@ -411,3 +411,9 @@ change how the code is interpreted. They might be implemented as keywords.
 - <https://www.perl.com/pub/2003/06/13/design1.html/>
 - <https://github.com/jeffa/DesignPatterns-Perl>
 - <https://github.com/ynonp/perl-design-patterns>
+- Dependency injection
+    * <https://metacpan.org/pod/Bread::Board>
+    * <https://metacpan.org/pod/Rewire>
+    * <https://metacpan.org/pod/Class::DI>
+    * <https://metacpan.org/pod/Beam::Wire>
+    * <https://metacpan.org/pod/IOC>
