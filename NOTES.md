@@ -417,3 +417,5 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/Class::DI>
     * <https://metacpan.org/pod/Beam::Wire>
     * <https://metacpan.org/pod/IOC>
+- "named args"
+    * <https://metacpan.org/pod/PerlX::ArraySkip>
