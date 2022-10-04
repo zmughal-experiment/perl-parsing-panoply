@@ -378,6 +378,19 @@ change how the code is interpreted. They might be implemented as keywords.
     * `Test::Most`
     * `Mu`, `Mu::Role`
     * `common::sense`
+- `warnings`
+    * <https://metacpan.org/pod/warnings::everywhere>
+    * <https://metacpan.org/pod/warnings::lock>
+    * <https://metacpan.org/pod/warnings::compat>
+    * <https://metacpan.org/pod/warnings::method>
+    * <https://metacpan.org/pod/warnings::unused>
+    * <https://metacpan.org/pod/Warnings::Version>
+    * <https://metacpan.org/pod/encoding::warnings>
+    * <https://metacpan.org/pod/warnings::pedantic>
+    * <https://metacpan.org/pod/warnings::MaybeFatal>
+    * <https://metacpan.org/pod/warnings::DynamicScope>
+    * <https://metacpan.org/pod/warnings::illegalproto>
+    * <https://metacpan.org/pod/warnings::regex::recompile>
 - `Syntax::Feature::*`: <https://metacpan.org/pod/syntax>
 - <https://metacpan.org/dist/perl5i>
 - <https://metacpan.org/pod/new>
