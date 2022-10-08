@@ -397,7 +397,14 @@ change how the code is interpreted. They might be implemented as keywords.
 - <https://metacpan.org/pod/Acme::Very::Modern::Perl>
 - <https://metacpan.org/pod/Acme::CPANModules::ModernPreambles>
 - <https://metacpan.org/pod/Dir::Self> (`__DIR__` uses `caller`)
-- <https://metacpan.org/pod/if>
+- Loading modules:
+    * Built-in:
+        + <https://perldoc.perl.org/Module::Load>
+        + <https://perldoc.perl.org/Module::Load::Conditional>
+        + <https://metacpan.org/pod/if>
+        + <https://metacpan.org/pod/autouse>
+        + <https://perldoc.perl.org/AutoLoader>
+        + <https://perldoc.perl.org/SelfLoader>
 
 # Parsing / recognising
 
