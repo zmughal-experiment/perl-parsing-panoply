@@ -406,6 +406,19 @@ change how the code is interpreted. They might be implemented as keywords.
         + <https://metacpan.org/pod/autouse>
         + <https://perldoc.perl.org/AutoLoader>
         + <https://perldoc.perl.org/SelfLoader>
+    * <https://metacpan.org/pod/Class::Autouse>
+    * <https://metacpan.org/pod/ClassLoader>
+    * <https://metacpan.org/pod/AnyLoader>
+    * <https://metacpan.org/pod/Module::Reload>
+    * <https://metacpan.org/pod/aliased>
+    * <https://metacpan.org/pod/pkg>
+    * <https://metacpan.org/pod/Module::Reader>
+    * <https://metacpan.org/pod/pm>
+    * <https://metacpan.org/pod/later>
+    * Using the network!!!
+        + <https://metacpan.org/pod/lib::xi>
+        + <https://metacpan.org/pod/lazy>
+        + <https://metacpan.org/pod/Acme::Magic::Pony>
 
 # Parsing / recognising
 
