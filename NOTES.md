@@ -419,6 +419,11 @@ change how the code is interpreted. They might be implemented as keywords.
         + <https://metacpan.org/pod/lib::xi>
         + <https://metacpan.org/pod/lazy>
         + <https://metacpan.org/pod/Acme::Magic::Pony>
+- `@INC`
+    * <https://metacpan.org/pod/lib::relative>
+    * <https://metacpan.org/pod/lib::projectroot>
+    * <https://metacpan.org/pod/lib::core::only>
+    * <https://metacpan.org/pod/FindBin::libs>
 
 # Parsing / recognising
 
