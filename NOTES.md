@@ -6,6 +6,10 @@
 # Syntax added in core Perl
 
 - <https://metacpan.org/pod/feature>
+- <https://metacpan.org/pod/experimental>
+    * <https://metacpan.org/pod/experimentals>
+- <https://metacpan.org/pod/less>
+    * <https://metacpan.org/pod/fewer>
 - <https://metacpan.org/pod/B::Keywords>
 - "Secret" combinations of operators: <https://metacpan.org/dist/perlsecret>
 - <https://metacpan.org/pod/Syntax::Construct>
