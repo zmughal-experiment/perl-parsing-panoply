@@ -71,6 +71,7 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/Class::Struct>
     * <https://metacpan.org/pod/Mic>
     * <https://metacpan.org/pod/Mite>
+    * <https://metacpan.org/pod/Subclass::Of>
     * Moose, Mouse, Moo, Mo, Mu, Role::Tiny, Class::Tiny
         + <https://metacpan.org/dist/MooseX-MungeHas>
         + <https://metacpan.org/pod/Sub::HandlesVia>
