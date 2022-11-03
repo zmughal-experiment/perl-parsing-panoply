@@ -361,6 +361,7 @@ change how the code is interpreted. They might be implemented as keywords.
 - <https://metacpan.org/pod/B::Hooks::EndOfScope>
 - <https://metacpan.org/pod/AtExit>
 - <https://metacpan.org/pod/Scope::OnExit>
+- <https://metacpan.org/pod/Scope::OnExit::Wrap>
 - <https://metacpan.org/pod/Scope::Cleanup>
 - <https://metacpan.org/pod/Scope::Guard>
 - <https://metacpan.org/pod/Guard>
