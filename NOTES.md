@@ -18,6 +18,9 @@
     * `defer`: <https://metacpan.org/pod/Feature::Compat::Defer>
     * `builtin`: <https://metacpan.org/pod/builtins::compat>
     * `say`: <https://metacpan.org/pod/Say::Compat>, <https://metacpan.org/pod/say>
+- Aliasing <https://www.effectiveperlprogramming.com/2015/08/create-named-variable-aliases-with-ref-aliasing/>
+    * <https://metacpan.org/pod/Alias::Any>
+    * <https://metacpan.org/pod/Data::Alias>
 
 # Syntax extensions on CPAN
 
@@ -344,7 +347,6 @@ change how the code is interpreted. They might be implemented as keywords.
 
 # Changing semantics
 
-- <https://metacpan.org/pod/Data::Alias>
 - <https://metacpan.org/pod/Variable::Magic>
 - <https://metacpan.org/pod/Acme::CPANModules::MagicVariableTechnique>
 
