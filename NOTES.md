@@ -300,6 +300,7 @@ change how the code is interpreted. They might be implemented as keywords.
         + <https://users.monash.edu/~damian/papers/HTML/Perligata.html>
     * <https://metacpan.org/pod/Lingua::Sinica::PerlYuYan>
     * <https://metacpan.org/pod/macro>
+    * <https://metacpan.org/pod/Macro::Simple>
 - Related: `.pmc` files:
     * <https://metacpan.org/pod/Module::Compile>
     * <https://perldoc.perl.org/functions/require>
