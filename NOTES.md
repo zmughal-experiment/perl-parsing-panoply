@@ -407,6 +407,8 @@ change how the code is interpreted. They might be implemented as keywords.
 - <https://metacpan.org/pod/Acme::CPANModules::ModernPreambles>
 - <https://metacpan.org/pod/Dir::Self> (`__DIR__` uses `caller`)
 - <https://metacpan.org/pod/Path::This>
+- <https://metacpan.org/pod/package::compute>
+- <https://metacpan.org/pod/namespace::local>
 - Loading modules:
     * Built-in:
         + <https://perldoc.perl.org/Module::Load>
@@ -421,18 +423,27 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/Module::Reload>
     * <https://metacpan.org/pod/aliased>
     * <https://metacpan.org/pod/pkg>
+    * <https://metacpan.org/pod/Package::Abbreviate>
     * <https://metacpan.org/pod/Module::Reader>
     * <https://metacpan.org/pod/pm>
     * <https://metacpan.org/pod/later>
+    * <https://metacpan.org/pod/Module::Quote>
+    * <https://metacpan.org/pod/Module::Pluggable>
+    * <https://metacpan.org/pod/again>
+    * <https://metacpan.org/pod/all>
+    * <https://metacpan.org/pod/namespace::alias>
     * Using the network!!!
         + <https://metacpan.org/pod/lib::xi>
         + <https://metacpan.org/pod/lazy>
         + <https://metacpan.org/pod/Acme::Magic::Pony>
+    * See also:
+        + <https://metacpan.org/pod/Acme::CPANModules::Import::NEILB::ModuleLoading>
 - `@INC`
     * <https://metacpan.org/pod/lib::relative>
     * <https://metacpan.org/pod/lib::projectroot>
     * <https://metacpan.org/pod/lib::core::only>
     * <https://metacpan.org/pod/FindBin::libs>
+    * <https://metacpan.org/pod/thanks>
 
 # Parsing / recognising
 
