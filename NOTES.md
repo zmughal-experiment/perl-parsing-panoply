@@ -21,6 +21,8 @@
 - Aliasing <https://www.effectiveperlprogramming.com/2015/08/create-named-variable-aliases-with-ref-aliasing/>
     * <https://metacpan.org/pod/Alias::Any>
     * <https://metacpan.org/pod/Data::Alias>
+- Feature `current_sub`
+    * <https://metacpan.org/pod/Sub::Current>
 
 # Syntax extensions on CPAN
 
