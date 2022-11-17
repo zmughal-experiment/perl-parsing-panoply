@@ -53,6 +53,9 @@ change how the code is interpreted. They might be implemented as keywords.
         + <https://metacpan.org/pod/Smart::Args::TypeTiny>
     * PPR-based source filter: <https://metacpan.org/pod/Method::Signatures::PP>
     * <https://metacpan.org/pod/signatures> (uses B::Hooks::Parser)
+    * with currying
+        + <https://metacpan.org/pod/Sub::Curried> (uses Devel::Declare)
+        + <https://metacpan.org/pod/Attribute::Curried> (uses attributes)
 - multiple dispatch
     * XS keyword plugin: <https://metacpan.org/pod/Syntax::Keyword::MultiSub>
     * attributes: <https://metacpan.org/pod/Sub::Multi::Tiny>
