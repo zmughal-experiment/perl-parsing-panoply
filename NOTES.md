@@ -76,7 +76,19 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/Zydeco>
     * <https://metacpan.org/pod/Dios>
         + and multiple dispatch
+        + and inside-out
     * <https://metacpan.org/pod/Class::Struct>
+    * Inside-out
+        + <https://metacpan.org/pod/Hash::FieldHash>
+        + <https://perldoc.perl.org/Hash::Util::FieldHash>
+        + <https://metacpan.org/pod/Hash::Util::FieldHash::Compat>
+        + <https://metacpan.org/pod/Class::Std>
+        + <https://metacpan.org/pod/OO::InsideOut>
+        + <https://metacpan.org/pod/Class::Tie::InsideOut>
+        + <https://metacpan.org/pod/MooX::InsideOut>
+        + <https://metacpan.org/pod/Class::InsideOut>
+        + <https://metacpan.org/pod/MooseX::InsideOut>
+        + <https://metacpan.org/pod/Object::InsideOut>
     * <https://metacpan.org/pod/Mic>
     * <https://metacpan.org/pod/Mite>
     * <https://metacpan.org/pod/Subclass::Of>
