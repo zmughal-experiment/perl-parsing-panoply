@@ -200,6 +200,7 @@ change how the code is interpreted. They might be implemented as keywords.
 - Subroutine tricks (not really new syntax)
     * <https://metacpan.org/pod/PerlX::Maybe>
     * <https://metacpan.org/pod/curry>
+    * <https://metacpan.org/pod/Sub::Curry>
     * <https://metacpan.org/pod/Sub::Operable>
     * <https://metacpan.org/pod/Async::Methods>
     * <https://metacpan.org/pod/Object::Util>
@@ -233,6 +234,7 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/HOI::Match>
     * <https://metacpan.org/pod/List::MapMulti>
     * <https://metacpan.org/pod/UnderscoreJS>
+    * <https://metacpan.org/pod/Sub::Lambda>
 - Logic programming
     * <https://metacpan.org/pod/Logic>
     * <https://metacpan.org/pod/AI::Prolog>
