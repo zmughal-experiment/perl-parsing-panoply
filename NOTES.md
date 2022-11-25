@@ -237,6 +237,7 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/List::MapMulti>
     * <https://metacpan.org/pod/UnderscoreJS>
     * <https://metacpan.org/pod/Sub::Lambda>
+    * <https://metacpan.org/pod/Sub::PatternMatching>
 - Logic programming
     * <https://metacpan.org/pod/Logic>
     * <https://metacpan.org/pod/AI::Prolog>
