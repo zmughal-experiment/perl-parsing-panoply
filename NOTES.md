@@ -16,7 +16,7 @@
 - Fallbacks to backport features:
     * `try`/`catch`: <https://metacpan.org/pod/Feature::Compat::Try>
     * `defer`: <https://metacpan.org/pod/Feature::Compat::Defer>
-    * `builtin`: <https://metacpan.org/pod/builtins::compat>
+    * `builtin`: <https://metacpan.org/pod/builtins::compat>, <https://metacpan.org/pod/builtin::compat>
     * `say`: <https://metacpan.org/pod/Say::Compat>, <https://metacpan.org/pod/say>
 - Aliasing <https://www.effectiveperlprogramming.com/2015/08/create-named-variable-aliases-with-ref-aliasing/>
     * <https://metacpan.org/pod/Alias::Any>
