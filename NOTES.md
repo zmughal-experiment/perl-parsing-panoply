@@ -370,6 +370,8 @@ change how the code is interpreted. They might be implemented as keywords.
 - <https://metacpan.org/pod/Sub::WhenBodied>
 - <https://metacpan.org/pod/Sub::Mutate>
 
+- <https://metacpan.org/pod/Perl::Phase>
+
 # Changing semantics
 
 - <https://metacpan.org/pod/Variable::Magic>
