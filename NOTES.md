@@ -193,6 +193,7 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/failures>
     * <https://metacpan.org/pod/Exception::Class>
     * <https://metacpan.org/pod/Throwable>
+    * <https://metacpan.org/pod/results>
 - Enum
     * <https://metacpan.org/pod/enum>
     * <https://metacpan.org/pod/Data::Enum>
@@ -359,6 +360,7 @@ change how the code is interpreted. They might be implemented as keywords.
 
 - <https://metacpan.org/pod/Scope::Upper>
     * <https://metacpan.org/pod/return::thence>
+    * <https://metacpan.org/pod/Return::MultiLevel>
 - <https://metacpan.org/pod/PadWalker>
 - <https://metacpan.org/pod/Scope::Escape>
 
