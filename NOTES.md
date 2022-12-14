@@ -473,6 +473,15 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/FindBin::libs>
     * <https://metacpan.org/pod/thanks>
 
+# Data structures / Tie
+
+- <https://metacpan.org/pod/Tie::RefHash>
+    * <https://metacpan.org/pod/Tie::RefHash::Weak>
+- <https://metacpan.org/pod/Tie::ToObject>
+- Ordered hash
+    * <https://metacpan.org/pod/Hash::Ordered>
+    * <https://metacpan.org/pod/Tie::IxHash>
+
 # Parsing / recognising
 
 - See § Parsers at <https://orbital-transfer.github.io/doc/development/language/perl/>
