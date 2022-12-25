@@ -164,6 +164,7 @@ change how the code is interpreted. They might be implemented as keywords.
             + <https://metacpan.org/pod/PerlX::Assert>
         + interface
             + <https://metacpan.org/pod/Function::Interface>
+            + <https://metacpan.org/pod/Role::Declare>
         + older
             + <https://metacpan.org/pod/typesafety>
             + <https://metacpan.org/pod/types>
