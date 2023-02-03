@@ -18,6 +18,7 @@
     * `defer`: <https://metacpan.org/pod/Feature::Compat::Defer>
     * `builtin`: <https://metacpan.org/pod/builtins::compat>, <https://metacpan.org/pod/builtin::compat>
     * `say`: <https://metacpan.org/pod/Say::Compat>, <https://metacpan.org/pod/say>
+    * `class`: <https://metacpan.org/pod/Feature::Compat::Class> (feature not yet merged into perl5)
 - Aliasing <https://www.effectiveperlprogramming.com/2015/08/create-named-variable-aliases-with-ref-aliasing/>
     * <https://metacpan.org/pod/Alias::Any>
     * <https://metacpan.org/pod/Data::Alias>
