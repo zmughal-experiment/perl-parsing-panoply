@@ -407,6 +407,9 @@ change how the code is interpreted. They might be implemented as keywords.
 
 # Importing into caller
 
+- Imports
+    * <https://metacpan.org/pod/Perl::PrereqScanner::NotQuiteLite>
+    * <https://metacpan.org/pod/App::perlimports>
 - <https://metacpan.org/pod/Import::Into>
 - `strict` and more <https://metacpan.org/pod/strictures>
 - Miscellaneous that import `strict`:
