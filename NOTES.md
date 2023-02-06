@@ -142,6 +142,8 @@ change how the code is interpreted. They might be implemented as keywords.
         + <https://metacpan.org/pod/Variable::Declaration> (uses Keyword::Simple + Type::Tie)
     * checking / constraints
         + <https://metacpan.org/pod/Type::Tiny>
+            + <https://typetiny.toby.ink/>
+            + <https://metacpan.org/pod/Type::Registry#lookup($name)>
         + <https://metacpan.org/pod/Mouse::Util::TypeConstraints>
         + <https://metacpan.org/pod/Specio>
         + <https://metacpan.org/pod/Moose::Meta::TypeConstraint>
