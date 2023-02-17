@@ -313,6 +313,7 @@ change how the code is interpreted. They might be implemented as keywords.
 - [[LeoNerd's programming thoughts: Writing a Perl Core Feature|https://leonerds-code.blogspot.com/2021/02/writing-perl-core-feature.html]]
 - <https://metacpan.org/pod/XS::Parse::Keyword>
     * <https://metacpan.org/pod/XS::Parse::Infix> is not yet available to work in non-patched Perl
+    * <https://metacpan.org/pod/XS::Parse::Keyword::FromPerl>
 - Keywords in Pure Perl
     * <https://metacpan.org/pod/Keyword::Simple>
     * <https://metacpan.org/pod/Keyword::Declare>
