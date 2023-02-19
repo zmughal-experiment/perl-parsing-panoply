@@ -144,6 +144,8 @@ change how the code is interpreted. They might be implemented as keywords.
         + <https://metacpan.org/pod/Type::Tiny>
             + <https://typetiny.toby.ink/>
             + <https://metacpan.org/pod/Type::Registry#lookup($name)>
+            + <https://metacpan.org/pod/Type::Params>
+                + <https://blogs.perl.org/users/toby_inkster/2023/02/using-typeparams-effectively.html>
         + <https://metacpan.org/pod/Mouse::Util::TypeConstraints>
         + <https://metacpan.org/pod/Specio>
         + <https://metacpan.org/pod/Moose::Meta::TypeConstraint>
