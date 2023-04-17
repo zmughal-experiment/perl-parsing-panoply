@@ -321,6 +321,7 @@ change how the code is interpreted. They might be implemented as keywords.
 - <https://metacpan.org/pod/XS::Parse::Keyword>
     * <https://metacpan.org/pod/XS::Parse::Infix> is not yet available to work in non-patched Perl
     * <https://metacpan.org/pod/XS::Parse::Keyword::FromPerl>
+    * <https://metacpan.org/pod/XS::Parse::Sublike>
 - Keywords in Pure Perl
     * <https://metacpan.org/pod/Keyword::Simple>
     * <https://metacpan.org/pod/Keyword::Declare>
