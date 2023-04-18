@@ -465,6 +465,7 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/ClassLoader>
     * <https://metacpan.org/pod/AnyLoader>
     * <https://metacpan.org/pod/Module::Reload>
+    * <https://metacpan.org/pod/Module::Runtime>
     * <https://metacpan.org/pod/aliased>
     * <https://metacpan.org/pod/pkg>
     * <https://metacpan.org/pod/Package::Abbreviate>
