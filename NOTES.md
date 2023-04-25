@@ -329,6 +329,7 @@ change how the code is interpreted. They might be implemented as keywords.
 - (deprecated) <https://metacpan.org/pod/Devel::Declare>
 - <https://metacpan.org/pod/Devel::CallParser>
 - <https://metacpan.org/pod/B::Hooks::Parser>
+- <https://metacpan.org/pod/Sub::Op>
 - Source filters:
     * <https://metacpan.org/pod/Filter::Simple>
     * <https://metacpan.org/pod/Filter::Util::Call>
