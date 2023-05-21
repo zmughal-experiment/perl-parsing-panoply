@@ -511,6 +511,8 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://jeffreykegler.github.io/personal/undecide/TPR2.pdf>
     * <https://jeffreykegler.github.io/personal/undecide/TPR3.pdf>
 - https://perl.plover.com/NPC/
+- [[perlapi - Lexer interface|https://perldoc.perl.org/perlapi#Lexer-interface]]
+    * <https://metacpan.org/pod/Perl::Lexer>
 
 # Design patterns
 
