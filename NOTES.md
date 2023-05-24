@@ -65,6 +65,7 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/Sub::MultiMethod>
     * <https://metacpan.org/pod/Sub::SymMethod>
     * <https://metacpan.org/pod/Sub::SmartMatch>
+    * <https://metacpan.org/pod/Method::Cumulative>
 - `defer`
     * XS keyword plugin: <https://metacpan.org/pod/Syntax::Keyword::Defer>
 - Pipeline / flow-based
