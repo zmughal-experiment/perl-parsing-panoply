@@ -401,6 +401,9 @@ change how the code is interpreted. They might be implemented as keywords.
 - <https://metacpan.org/pod/underscore>
 - <https://metacpan.org/pod/optimize>
     * has integer optimizations
+- Compile time
+    * <https://metacpan.org/pod/BEGIN::Lift>
+    * <https://metacpan.org/pod/Devel::BeginLift>
 
 
 # Defer running
