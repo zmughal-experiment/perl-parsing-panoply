@@ -404,6 +404,7 @@ change how the code is interpreted. They might be implemented as keywords.
 - Compile time
     * <https://metacpan.org/pod/BEGIN::Lift>
     * <https://metacpan.org/pod/Devel::BeginLift>
+- <https://metacpan.org/pod/B::Foreach::Iterator>
 
 
 # Defer running
