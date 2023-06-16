@@ -386,6 +386,7 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/decorators>
     * <https://metacpan.org/pod/Exporter::Attributes>
     * <https://metacpan.org/pod/Sub::ArgShortcut>
+    * <https://metacpan.org/pod/Sub::Attribute>
 - <https://metacpan.org/pod/Sub::WhenBodied>
 - <https://metacpan.org/pod/Sub::Mutate>
 
