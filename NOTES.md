@@ -471,6 +471,7 @@ change how the code is interpreted. They might be implemented as keywords.
         + <https://perldoc.perl.org/AutoLoader>
         + <https://perldoc.perl.org/SelfLoader>
     * <https://metacpan.org/pod/Class::Autouse>
+    * <https://metacpan.org/pod/Module::Load::In::INIT>
     * <https://metacpan.org/pod/ClassLoader>
     * <https://metacpan.org/pod/AnyLoader>
     * <https://metacpan.org/pod/Module::Reload>
