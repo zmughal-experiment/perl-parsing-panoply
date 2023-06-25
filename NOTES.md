@@ -258,6 +258,7 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/AI::Prolog>
 - Destructuring assignment
     * <https://metacpan.org/pod/DestructAssign>
+    * <https://metacpan.org/pod/assign>
 - Return context
     * <https://metacpan.org/pod/Want>
     * <https://metacpan.org/pod/Context::Handle>
