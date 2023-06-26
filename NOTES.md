@@ -273,6 +273,9 @@ change how the code is interpreted. They might be implemented as keywords.
 - autoboxing
     * <https://metacpan.org/pod/autobox>
     * <https://metacpan.org/pod/autobox::Core>
+- Safe navigation
+    * <https://metacpan.org/pod/PerlX::SafeNav>
+    * <https://metacpan.org/pod/Scalar::Andand>
 - Operator overloading
     * <https://metacpan.org/pod/IO::All>
     * <https://metacpan.org/pod/Package::Relative>
