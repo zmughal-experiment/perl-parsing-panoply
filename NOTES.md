@@ -199,6 +199,10 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/PerlX::Define>
     * <https://metacpan.org/pod/Readonly>
         + <https://metacpan.org/pod/Readonly::BeginLift>
+    * <https://metacpan.org/pod/Readonly::Tiny>
+    * <https://metacpan.org/pod/ReadonlyX>
+    * <https://metacpan.org/pod/Readonly::XS>
+    * <https://metacpan.org/pod/Readonly::Enum>
     * <https://metacpan.org/pod/Const::Fast>
         + <https://metacpan.org/pod/Const::Exporter>
     * <https://metacpan.org/pod/Memoize::Lift>
