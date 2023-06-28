@@ -198,6 +198,7 @@ change how the code is interpreted. They might be implemented as keywords.
     * <http://neilb.org/reviews/constants.html>
     * <https://metacpan.org/pod/PerlX::Define>
     * <https://metacpan.org/pod/Readonly>
+        + <https://metacpan.org/pod/Readonly::BeginLift>
     * <https://metacpan.org/pod/Const::Fast>
         + <https://metacpan.org/pod/Const::Exporter>
     * <https://metacpan.org/pod/Memoize::Lift>
