@@ -280,6 +280,8 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/autobox::Core>
 - Safe navigation
     * <https://metacpan.org/pod/PerlX::SafeNav>
+        + <https://dev.to/gugod/safe-navigation-monad-4lel>
+        + <https://gugod.org/2023/06/perl-safe-navigation-monad-en/>
     * <https://metacpan.org/pod/Scalar::Andand>
 - Operator overloading
     * <https://metacpan.org/pod/IO::All>
