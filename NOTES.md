@@ -208,6 +208,7 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/Memoize::Lift>
     * <https://metacpan.org/pod/Keyword::Value>
     * <https://metacpan.org/pod/PerlX::Let>
+    * <https://metacpan.org/pod/immutable>
 - Exception objects
     * <https://metacpan.org/pod/failures>
     * <https://metacpan.org/pod/Exception::Class>
