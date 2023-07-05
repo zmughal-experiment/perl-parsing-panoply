@@ -300,6 +300,7 @@ change how the code is interpreted. They might be implemented as keywords.
     * <http://blogs.perl.org/users/rurban/2013/02/no-indirect-considered-harmful.html>
 - <https://metacpan.org/pod/Rubyish>
     * <https://metacpan.org/pod/PerlX::MethodCallWithBlock>
+- <https://metacpan.org/pod/PerlX::ScopeFunction>
 - Coroutines
     * <https://metacpan.org/pod/Coro>
 - Generators
