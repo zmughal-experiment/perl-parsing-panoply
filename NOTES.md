@@ -140,6 +140,10 @@ change how the code is interpreted. They might be implemented as keywords.
         + <https://metacpan.org/pod/Quote::Code> (XS keyword plugin)
         + <https://metacpan.org/pod/Quote::Ref> (XS keyword plugin)
         + <https://metacpan.org/pod/Quote::Reference> (uses source filter)
+    * Non-det
+        + <https://metacpan.org/pod/Amb>
+        + <https://metacpan.org/pod/Quantum::Superpositions>
+        + <https://metacpan.org/pod/Quantum::Superpositions::Lazy>
 - Types
     * syntax
         + attributes: <https://metacpan.org/pod/Attribute::Types>
