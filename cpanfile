@@ -6,3 +6,6 @@ requires 'PPR::X';
 requires 'Role::Tiny';
 requires 'feature';
 requires 'lib::projectroot';
+requires 're';
+requires 'strict';
+requires 'warnings';
