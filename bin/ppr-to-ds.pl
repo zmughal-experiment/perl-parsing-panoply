@@ -1,10 +1,9 @@
 #!/usr/bin/env perl
 
-use FindBin;
-use lib "$FindBin::Bin/../lib";
-
 use strict;
 use warnings;
+
+use lib::projectroot qw(lib);
 
 use feature qw(say);
 

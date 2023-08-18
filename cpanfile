@@ -5,3 +5,4 @@ requires 'Moo::Role';
 requires 'PPR::X';
 requires 'Role::Tiny';
 requires 'feature';
+requires 'lib::projectroot';
