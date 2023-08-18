@@ -554,6 +554,7 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://wiki.c2.com/?PerlPatternsRepository>
     * <https://en.wikipedia.org/wiki/Perl_Design_Patterns_Book>
     * Powered by <https://github.com/scrottie/TinyWiki>
+- <https://github.com/manwar/Design-Patterns>
 - <https://www.perl.com/pub/2003/06/13/design1.html/>
 - <https://github.com/jeffa/DesignPatterns-Perl>
 - <https://github.com/ynonp/perl-design-patterns>
