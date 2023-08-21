@@ -1,5 +1,10 @@
 % vim: ft=prolog
 
+:- module(perlconfig, [
+    read_perl_config_dump_terms/1,
+    assert_perl_config_data/0
+   ]).
+
 :- use_module(library(process)).
 
 :- dynamic perl_config/2.
