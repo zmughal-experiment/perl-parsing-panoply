@@ -296,6 +296,7 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/IO::All>
     * <https://metacpan.org/pod/Package::Relative>
     * <https://metacpan.org/pod/overload::reify>
+    * <https://metacpan.org/pod/overload::substr>
 - Runtime handling of function calls
     * <https://metacpan.org/pod/Autoload::AUTOCAN>
     * <https://metacpan.org/pod/selfvars::autoload>
