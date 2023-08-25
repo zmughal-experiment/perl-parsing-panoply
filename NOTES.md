@@ -46,7 +46,7 @@ change how the code is interpreted. They might be implemented as keywords.
     * PPR-based source filter: <https://metacpan.org/pod/PerlX::AsyncAwait>
     * <https://metacpan.org/pod/Async::Trampoline>
     * <https://metacpan.org/pod/Mojo::AsyncAwait>
-- signatures + parameters
+- signatures + parameters + return types
     * XS keyword plugin: <https://metacpan.org/pod/Function::Parameters>
     * <https://metacpan.org/pod/Method::Signatures> (uses Devel::Declare)
     * <https://metacpan.org/pod/Method::Signatures::Simple> (uses Devel::Declare)
@@ -57,6 +57,7 @@ change how the code is interpreted. They might be implemented as keywords.
     * with currying
         + <https://metacpan.org/pod/Sub::Curried> (uses Devel::Declare)
         + <https://metacpan.org/pod/Attribute::Curried> (uses attributes)
+    * attributes: <https://metacpan.org/pod/Return::Type>, <https://metacpan.org/pod/Return::Type::Lexical>
 - multiple dispatch
     * XS keyword plugin: <https://metacpan.org/pod/Syntax::Keyword::MultiSub>
     * attributes: <https://metacpan.org/pod/Sub::Multi::Tiny>
