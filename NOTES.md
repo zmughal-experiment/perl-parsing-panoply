@@ -74,13 +74,15 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/Piper>
     * <https://metacpan.org/pod/Text::Pipe>
 - OO
+    * <https://perldoc.perl.org/fields> (in core)
+    * <https://perldoc.perl.org/Class::Struct> (in core)
+        + <https://metacpan.org/pod/Class::Struct>
     * <https://metacpan.org/pod/Object::Pad>
     * <https://metacpan.org/pod/Moops>
     * <https://metacpan.org/pod/Zydeco>
     * <https://metacpan.org/pod/Dios>
         + and multiple dispatch
         + and inside-out
-    * <https://metacpan.org/pod/Class::Struct>
     * Inside-out
         + <https://metacpan.org/pod/Hash::FieldHash>
         + <https://perldoc.perl.org/Hash::Util::FieldHash>
