@@ -24,6 +24,11 @@
     * <https://metacpan.org/pod/Data::Alias>
 - Feature `current_sub`
     * <https://metacpan.org/pod/Sub::Current>
+- Numerical
+    * <https://perldoc.perl.org/integer>
+    * <https://perldoc.perl.org/bigint>
+    * <https://perldoc.perl.org/bignum>
+    * <https://perldoc.perl.org/bigrat>
 
 # Syntax extensions on CPAN
 
