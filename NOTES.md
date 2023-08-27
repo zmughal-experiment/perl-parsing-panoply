@@ -143,6 +143,8 @@ change how the code is interpreted. They might be implemented as keywords.
             + <https://metacpan.org/pod/Syntax::Operator::Zip>
         + divides
             + <https://metacpan.org/pod/Syntax::Operator::Divides>
+        + matches
+            + <https://metacpan.org/pod/Syntax::Operator::Matches>
     * Quote-likes
         + <https://metacpan.org/pod/PerlX::QuoteOperator> (uses Devel::Declare)
         + <https://metacpan.org/pod/Quote::Code> (XS keyword plugin)
