@@ -8,6 +8,8 @@ requires 'Language::Prolog::Types::overload';
 requires 'List::Util';
 requires 'List::UtilsBy';
 requires 'Moo::Role';
+requires 'Opcode';
+requires 'Opcodes';
 requires 'PPR::X';
 requires 'Role::Tiny';
 requires 'feature';
