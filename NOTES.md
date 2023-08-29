@@ -384,6 +384,12 @@ change how the code is interpreted. They might be implemented as keywords.
 - <https://metacpan.org/pod/B::C>
 - <https://metacpan.org/pod/B::Generate>
 
+Decompilation:
+- <https://metacpan.org/pod/B::Deparse>
+- [Rocky Bernstein - Where Am I Now A Novel Use Of Decompilation - YouTube](https://www.youtube.com/watch?v=gREriCbwW8E)
+    * <https://metacpan.org/pod/B::DeparseTree>
+    * [Rocky Bernstein - Decompilation at Runtime and the Design of a Decompiler for Dynamic Interpreted Languages](https://rocky.github.io/Deparsing-Paper.pdf)
+
 - <https://metacpan.org/pod/Opcode>
     * <https://metacpan.org/pod/Safe>
     * <https://metacpan.org/pod/Eval::Safe>
