@@ -1,0 +1,9 @@
+#!/bin/sh
+
+swipl -g '
+	current_prolog_flag(argv, Packs),
+	member(Pack, Packs),
+	pack_install(Pack, [interactive(false)])
+	' -t halt \
+	-- \
+		prolog_graphviz
