@@ -158,7 +158,7 @@ change how the code is interpreted. They might be implemented as keywords.
     * syntax
         + attributes: <https://metacpan.org/pod/Attribute::Types>
         + tied variables: <https://metacpan.org/pod/Type::Tie>
-        + magic: <https://metacpan.org/pod/Lexical::TypeTiny> (uses Variable::Magic)
+        + magic: <https://metacpan.org/pod/Lexical::TypeTiny> (uses Variable::Magic + Lexical::Types)
         + <https://metacpan.org/pod/Variable::Declaration> (uses Keyword::Simple + Type::Tie)
         + <https://metacpan.org/pod/Lexical::Types>
     * checking / constraints
