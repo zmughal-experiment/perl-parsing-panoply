@@ -436,7 +436,7 @@ Decompilation:
 - <https://metacpan.org/pod/Variable::Magic>
 - <https://metacpan.org/pod/Acme::CPANModules::MagicVariableTechnique>
 
-- <https://metacpan.org/pod/autodie>
+- <https://metacpan.org/pod/autodie> (in core)
     * <https://metacpan.org/pod/autodie::variables>
 - <https://metacpan.org/dist/autovivification>
 - <https://metacpan.org/pod/underscore>
