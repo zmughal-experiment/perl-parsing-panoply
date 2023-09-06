@@ -211,6 +211,12 @@ change how the code is interpreted. They might be implemented as keywords.
         + <https://metacpan.org/pod/Data::Integer>
         + <https://metacpan.org/pod/Math::Float128>
     * <https://metacpan.org/pod/Types::Algebraic>
+    * cperl fork
+        + <https://perl11.org/cperl/perltypes.html>
+        + <https://perl11.org/cperl/perltypes.html#coretypes>
+        + <https://github.com/perl11/cperl/blob/master/pod/perltypes.pod>
+        + <https://github.com/perl11/cperl/issues/7>
+        + <https://github.com/perl11/cperl/wiki/Type-system>
 - Constants
     * <http://neilb.org/reviews/constants.html>
     * <https://metacpan.org/pod/PerlX::Define>
