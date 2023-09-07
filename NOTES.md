@@ -277,6 +277,7 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/fp>
     * <https://metacpan.org/pod/Perlude>
     * <https://metacpan.org/pod/List::Gen>
+    * <https://metacpan.org/pod/Whatever>
     * <https://metacpan.org/pod/HOI::Match>
     * <https://metacpan.org/pod/List::MapMulti>
     * <https://metacpan.org/pod/UnderscoreJS>
