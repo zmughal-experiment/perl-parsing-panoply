@@ -193,6 +193,7 @@ change how the code is interpreted. They might be implemented as keywords.
             + <https://metacpan.org/pod/PerlX::Assert>
         + interface
             + <https://metacpan.org/pod/Function::Interface>
+                + <https://speakerdeck.com/kfly8/interfaces-in-perl5-at-the-perl-conference-2019-in-pittsburgh>
             + <https://metacpan.org/pod/Role::Declare>
         + older
             + <https://metacpan.org/pod/typesafety>
