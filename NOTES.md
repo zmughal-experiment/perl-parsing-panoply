@@ -358,6 +358,7 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/Parallel::Map>
 - RPC
     * <https://metacpan.org/pod/Object::Remote>
+- <https://metacpan.org/pod/Syntax::Keyword::Inplace>
 
 # Extending the parser
 
