@@ -154,6 +154,7 @@ change how the code is interpreted. They might be implemented as keywords.
         + <https://metacpan.org/pod/Amb>
         + <https://metacpan.org/pod/Quantum::Superpositions>
         + <https://metacpan.org/pod/Quantum::Superpositions::Lazy>
+    * Gist with example of [Custom infix operators in perl5 · GitHub](https://gist.github.com/draegtun/540493)
 - Types
     * syntax
         + attributes: <https://metacpan.org/pod/Attribute::Types>
