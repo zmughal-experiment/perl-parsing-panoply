@@ -372,6 +372,7 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/Keyword::Simple>
     * <https://metacpan.org/pod/Keyword::Declare>
     * <https://metacpan.org/pod/Keyword::Pluggable> (fork of Keyword::Simple)
+    * <https://metacpan.org/pod/Parse::Keyword>
 - (deprecated) <https://metacpan.org/pod/Devel::Declare>
 - <https://metacpan.org/pod/Devel::CallParser>
 - <https://metacpan.org/pod/B::Hooks::Parser>
