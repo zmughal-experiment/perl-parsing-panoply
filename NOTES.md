@@ -286,6 +286,7 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/Sub::Lambda>
     * <https://metacpan.org/pod/Sub::PatternMatching>
     * <https://metacpan.org/pod/Params::PatternMatch>
+    * <https://metacpan.org/pod/Hydrogen>
     * <https://metacpan.org/pod/Function::Composition>
 - Logic programming
     * <https://metacpan.org/pod/Logic>
