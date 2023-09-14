@@ -288,6 +288,7 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/Params::PatternMatch>
     * <https://metacpan.org/pod/Hydrogen>
     * <https://metacpan.org/pod/Function::Composition>
+    * <https://metacpan.org/pod/Sub::Fp>
 - Logic programming
     * <https://metacpan.org/pod/Logic>
     * <https://metacpan.org/pod/AI::Prolog>
