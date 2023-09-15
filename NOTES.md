@@ -461,6 +461,7 @@ Decompilation:
     * <https://metacpan.org/pod/BEGIN::Lift>
     * <https://metacpan.org/pod/Devel::BeginLift>
 - <https://metacpan.org/pod/B::Foreach::Iterator>
+- <https://metacpan.org/release/PEVANS/stringification-0.01_004>
 
 
 # Defer running
