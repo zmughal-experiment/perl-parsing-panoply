@@ -310,6 +310,11 @@ change how the code is interpreted. They might be implemented as keywords.
 - autoboxing
     * <https://metacpan.org/pod/autobox>
     * <https://metacpan.org/pod/autobox::Core>
+- Dispatch table / switch
+    * <https://metacpan.org/pod/Switch> (uses source filter)
+    * <https://metacpan.org/pod/Switch::Plain> (uses XS keyword)
+    * <https://metacpan.org/pod/Switch::Perlish> (uses functions + dynamic scope)
+    * <https://metacpan.org/pod/Switch::Reftype> (simple dispatch table, fixed number of cases)
 - Safe navigation
     * <https://metacpan.org/pod/PerlX::SafeNav>
         + <https://dev.to/gugod/safe-navigation-monad-4lel>
