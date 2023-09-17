@@ -125,6 +125,7 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/Object::Extend>
     * <https://metacpan.org/pod/Package::Variant>
     * <https://metacpan.org/pod/Object::Trampoline>
+    * <https://metacpan.org/pod/Class::Implant> (mixins)
 - Operators
     * Smart-match
         + <https://metacpan.org/pod/match::smart>
