@@ -318,6 +318,7 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/Switch::Reftype> (simple dispatch table, fixed number of cases)
     * <https://metacpan.org/pod/Smart::Dispatch> (uses functions + dynamic scope)
     * <https://metacpan.org/pod/Dispatch::Fu> (uses function prototypes)
+    * <https://metacpan.org/pod/Switcheroo> (uses XS keyword via Parse::Keyword)
 - Safe navigation
     * <https://metacpan.org/pod/PerlX::SafeNav>
         + <https://dev.to/gugod/safe-navigation-monad-4lel>
