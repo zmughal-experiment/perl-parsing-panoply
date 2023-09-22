@@ -126,6 +126,7 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/Package::Variant>
     * <https://metacpan.org/pod/Object::Trampoline>
     * <https://metacpan.org/pod/Class::Implant> (mixins)
+    * un-OO!? <https://metacpan.org/pod/Acme::CPANModules::Unbless>
 - Operators
     * Smart-match
         + <https://metacpan.org/pod/match::smart>
