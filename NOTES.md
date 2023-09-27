@@ -370,7 +370,7 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/RxPerl>
     * <https://metacpan.org/pod/Ryu>
 - Communicating sequential processes
-    * <https://metacpan.org/pod/Thread::Csp>
+    * <https://metacpan.org/pod/Thread::CSP> (was <https://metacpan.org/pod/Thread::Csp>)
 - Parallel
     * <https://metacpan.org/pod/Parallel::Map>
 - RPC
