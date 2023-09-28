@@ -167,6 +167,7 @@ change how the code is interpreted. They might be implemented as keywords.
     * checking / constraints
         + <https://github.com/Perl-Oshun/oshun>
         + <https://metacpan.org/pod/Magic::Check>
+            + <https://metacpan.org/pod/Magic::Coerce>
         + <https://metacpan.org/dist/Perl-Types>
         + <https://metacpan.org/pod/Type::Tiny>
             + <https://typetiny.toby.ink/>
