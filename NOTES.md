@@ -377,6 +377,8 @@ change how the code is interpreted. They might be implemented as keywords.
 - RPC
     * <https://metacpan.org/pod/Object::Remote>
 - <https://metacpan.org/pod/Syntax::Keyword::Inplace>
+- Numerical
+    * <https://metacpan.org/pod/Math::BigInt::Lite>
 
 # Extending the parser
 
