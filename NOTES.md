@@ -379,6 +379,7 @@ change how the code is interpreted. They might be implemented as keywords.
 - <https://metacpan.org/pod/Syntax::Keyword::Inplace>
 - Numerical
     * <https://metacpan.org/pod/Math::BigInt::Lite>
+    * <https://metacpan.org/pod/Tie::CArray>
 
 # Extending the parser
 
