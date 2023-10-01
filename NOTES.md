@@ -380,6 +380,10 @@ change how the code is interpreted. They might be implemented as keywords.
 - Numerical
     * <https://metacpan.org/pod/Math::BigInt::Lite>
     * <https://metacpan.org/pod/Tie::CArray>
+    * <https://metacpan.org/pod/Math::Matrix::MaybeGSL>
+        + <https://metacpan.org/pod/Math::MatrixReal>
+        + <https://metacpan.org/pod/Math::GSL>
+
 
 # Extending the parser
 
