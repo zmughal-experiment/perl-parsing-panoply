@@ -383,6 +383,8 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/Math::Matrix::MaybeGSL>
         + <https://metacpan.org/pod/Math::MatrixReal>
         + <https://metacpan.org/pod/Math::GSL>
+    * <https://metacpan.org/pod/Math::Vector::Real>
+        + <https://metacpan.org/pod/Math::Vector::Real::XS>
 
 
 # Extending the parser
