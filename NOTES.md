@@ -385,6 +385,9 @@ change how the code is interpreted. They might be implemented as keywords.
         + <https://metacpan.org/pod/Math::GSL>
     * <https://metacpan.org/pod/Math::Vector::Real>
         + <https://metacpan.org/pod/Math::Vector::Real::XS>
+    * <https://metacpan.org/pod/Math::Int64>
+    * <https://metacpan.org/pod/Math::Int128>
+    * <https://metacpan.org/pod/Math::Int113>
 
 
 # Extending the parser
