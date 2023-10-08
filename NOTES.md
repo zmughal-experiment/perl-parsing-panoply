@@ -293,6 +293,7 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/Hydrogen>
     * <https://metacpan.org/pod/Function::Composition>
     * <https://metacpan.org/pod/Sub::Fp>
+    * <https://metacpan.org/pod/Data::SExpression>
 - Logic programming
     * <https://metacpan.org/pod/Logic>
     * <https://metacpan.org/pod/AI::Prolog>
