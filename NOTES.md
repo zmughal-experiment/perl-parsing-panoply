@@ -152,6 +152,7 @@ change how the code is interpreted. They might be implemented as keywords.
         + <https://metacpan.org/pod/Quote::Code> (XS keyword plugin)
         + <https://metacpan.org/pod/Quote::Ref> (XS keyword plugin)
         + <https://metacpan.org/pod/Quote::Reference> (uses source filter)
+        + <https://metacpan.org/pod/Filter::QuasiQuote>
     * Non-det
         + <https://metacpan.org/pod/Amb>
         + <https://metacpan.org/pod/Quantum::Superpositions>
