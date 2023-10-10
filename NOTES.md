@@ -390,6 +390,12 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/Math::Int64>
     * <https://metacpan.org/pod/Math::Int128>
     * <https://metacpan.org/pod/Math::Int113>
+- Other oddities:
+    * Index changes
+        + built-in (removed in 5.30): <https://perldoc.perl.org/5.28.3/arybase>
+            + <https://perldoc.perl.org/perldeprecation#Assigning-non-zero-to-$%5B-is-fatal>
+        + <https://metacpan.org/pod/Array::Base>
+        + <https://metacpan.org/pod/String::Base>
 
 
 # Extending the parser
