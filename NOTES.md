@@ -390,6 +390,11 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/Math::Int64>
     * <https://metacpan.org/pod/Math::Int128>
     * <https://metacpan.org/pod/Math::Int113>
+    * <https://metacpan.org/pod/Math::GMP>
+        + <https://metacpan.org/pod/Math::GMPz>
+        + <https://metacpan.org/pod/Math::GMPq>
+        + <https://metacpan.org/pod/Math::GMPf>
+        + <https://metacpan.org/pod/Math::GMPn>
 - Other oddities:
     * Index changes
         + built-in (removed in 5.30): <https://perldoc.perl.org/5.28.3/arybase>
