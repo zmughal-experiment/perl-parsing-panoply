@@ -115,25 +115,27 @@ sub walkops {
 	return $data unless $$op;
 
 	$data->{node} = {
-		#flags    => $op->flags,
-		class    => class($op),
 		name     => $op->name,
-		(
-			$op->name eq 'padsv'
-				? ( padname  => padname($self, $op->targ ) )
-				: ()
-		),
-		(
-			$op->name eq 'const'
-				? ( sv  => {
-					( $op->sv->can('as_string')
-						? ( as_string => $op->sv->as_string ) : () ),
-					( $op->sv->can('NV')
-						? ( NV => $op->sv->NV ) : () ),
-					type   => $op->sv->SvTYPE,
-				})
-				: ()
-		),
+		meta     => {
+			flags    => $op->flags,
+			class    => class($op),
+			(
+				$op->name eq 'padsv'
+					? ( padname  => padname($self, $op->targ ) )
+					: ()
+			),
+			(
+				$op->name eq 'const'
+					? ( sv  => {
+						( $op->sv->can('as_string')
+							? ( as_string => $op->sv->as_string ) : () ),
+						( $op->sv->can('NV')
+							? ( NV => $op->sv->NV ) : () ),
+						type   => $op->sv->SvTYPE,
+					})
+					: ()
+			),
+		},
 		children => [
 			map walkops($_, $self), $op->kids,
 		]
