@@ -55,6 +55,36 @@ display_root_as_gv_dump(Root) :-
 
 % }}}
 
+
+% Unparser {{{
+
+%map_opname(paddsv, Op, Map) :- Map = ['C'=Op.node.padname].
+%map_opname(_, Op, [L=]) :- Op.node.class = 'BINOP',
+
+%opname_tokens(leave,   ['{C}']).
+opname_tokens(const,   [ const(c(0)) ]).
+opname_tokens(add,     [ c(0), op('+'), c(1) ]).
+opname_tokens(sassign, [ c(1), op('='), c(0) ]).
+opname_tokens(paddsv,  [ var(c(0)) ]).
+opname_tokens(_, []).
+
+map_tokens(OpTree, Tokens) :-
+    Children = OpTree.node.children,
+    maplist( map_tokens, Children, ChildrenTokens ),
+    opname_tokens( OpTree.node.name, OpTokens),
+    append(ChildrenTokens, Tokens0),
+    append(Tokens0, OpTokens, Tokens).
+
+
+tree_to_tree(_{}, []).
+tree_to_tree(OpTree, FTree) :-
+    once( maplist( tree_to_tree, OpTree.node.children, C) ),
+    FTree =.. [OpTree.node.name|C].
+
+display_root_as_unparsed(_Root) :-
+    true.
+% }}}
+
 main :-
     current_prolog_flag(argv, Files), process_files(Files, display_root_as_gv_dump), halt
     ; halt.
