@@ -1,0 +1,20 @@
+- GNU Parallel
+- Stow
+- LedgerSMB
+- Publican
+- latex2html
+- LaTeXML
+- Biber
+- Frozen Bubble
+- O-Saft
+- DRBL (Diskless Remote Boot in Linux)
+- Convos
+- Mail::SpamAssassin
+- OpenSSL Perl
+- Dist::Zilla
+- App::GitGot
+- App::TimeTracker
+- App::Ack
+- App::St
+- App::plx
+- App::Todo
