@@ -5,17 +5,11 @@ use strict;
 use warnings;
 use B qw( class ppname main_cv main_root );
 use B::Utils 0.27 qw(walkoptree_simple all_roots );
+use B::PPP::Util;
+
 use Scalar::Util qw(reftype);
 use JSON::MaybeXS qw(encode_json);
 use IO::File;
-
-my @phases_pairs = (
-	BEGIN     => B::begin_av,
-	UNITCHECK => B::unitcheck_av,
-	CHECK     => B::check_av,
-	INIT      => B::init_av,
-	END       => B::end_av,
-);
 
 sub new {
 	my $class = shift;
@@ -44,7 +38,7 @@ sub new {
 
 sub add_phase {
 	my ($self, $name) = @_;
-	my $phase_av = { @phases_pairs }->{ $name };
+	my $phase_av = B::PPP::Util->get_phase_av( $name );
 	return unless $phase_av->isa('B::AV');
 	my @phase_cvs = $phase_av->ARRAY;
 	for my $index (0..$#phase_cvs) {
