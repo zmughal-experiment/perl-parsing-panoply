@@ -24,10 +24,10 @@ process_files(Files, Goal) :-
 % GraphViz {{{
 portray_op(Op, Label) :-
     Op.node.name = padsv,
-    atomic_list_concat([Op.node.name, Op.node.padname], ', ', Label).
+    atomic_list_concat([Op.node.name, Op.node.meta.padname], ', ', Label).
 portray_op(Op, Label) :-
     Op.node.name = const,
-    swritef(OpSvStr, '%t', [Op.node.sv]), atom_string(OpSvAtom, OpSvStr),
+    swritef(OpSvStr, '%t', [Op.node.meta.sv]), atom_string(OpSvAtom, OpSvStr),
     atomic_list_concat([Op.node.name, OpSvAtom], ', ', Label).
 portray_op(Op, Label) :-
     Label = Op.node.name.
@@ -58,7 +58,7 @@ display_root_as_gv_dump(Root) :-
 
 % Unparser {{{
 
-%map_opname(paddsv, Op, Map) :- Map = ['C'=Op.node.padname].
+%map_opname(paddsv, Op, Map) :- Map = ['C'=Op.node.meta.padname].
 %map_opname(_, Op, [L=]) :- Op.node.class = 'BINOP',
 
 %opname_tokens(leave,   ['{C}']).
