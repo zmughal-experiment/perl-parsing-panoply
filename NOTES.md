@@ -185,6 +185,7 @@ change how the code is interpreted. They might be implemented as keywords.
         + <https://metacpan.org/pod/Moose::Meta::TypeConstraint>
             + <https://metacpan.org/pod/MooseX::Types>
         + <https://metacpan.org/pod/Data::Types>
+        + <https://metacpan.org/pod/Scalar::Does>
         + assertion / DbC
             + <https://metacpan.org/pod/Sub::Contract>
             + <https://metacpan.org/pod/Class::DbC>
