@@ -157,6 +157,7 @@ change how the code is interpreted. They might be implemented as keywords.
         + <https://metacpan.org/pod/Syntax::Feature::Ql>
         + <https://metacpan.org/pod/Syntax::Feature::Qs>
         + <https://metacpan.org/pod/Syntax::Feature::Qi>
+        + <https://metacpan.org/pod/Syntax::Feature::Qn>
     * Non-det
         + <https://metacpan.org/pod/Amb>
         + <https://metacpan.org/pod/Quantum::Superpositions>
