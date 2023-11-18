@@ -53,6 +53,9 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/Mojo::AsyncAwait>
 - signatures + parameters + return types
     * XS keyword plugin: <https://metacpan.org/pod/Function::Parameters>
+        + re-exported by:
+            + <https://metacpan.org/pod/Syntax::Feature::Function>
+            + <https://metacpan.org/pod/routines>
     * <https://metacpan.org/pod/Method::Signatures> (uses Devel::Declare)
     * <https://metacpan.org/pod/Method::Signatures::Simple> (uses Devel::Declare)
     * <https://metacpan.org/pod/Smart::Args>
