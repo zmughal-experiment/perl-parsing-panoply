@@ -512,6 +512,10 @@ Decompilation:
     * <https://metacpan.org/pod/Devel::BeginLift>
 - <https://metacpan.org/pod/B::Foreach::Iterator>
 - <https://metacpan.org/release/PEVANS/stringification-0.01_004>
+- Destruction
+    * <https://metacpan.org/pod/ogd>
+    * <https://metacpan.org/pod/Devel::GlobalDestruction>
+    * <https://stackoverflow.com/questions/4902718/detecting-global-destruction-in-perl>
 
 
 # Defer running
