@@ -137,6 +137,7 @@ change how the code is interpreted. They might be implemented as keywords.
         + <https://metacpan.org/pod/Syntax::Feature::In>
         + <https://metacpan.org/pod/Scalar::In>
         + <https://metacpan.org/pod/Syntax::Keyword::Match>
+        + <https://metacpan.org/pod/Acme::CPANModules::SmartMatch>
     * `isa`
         + <https://metacpan.org/pod/isa>
     * For future perl infix operator support as described by <https://metacpan.org/pod/XS::Parse::Infix>
