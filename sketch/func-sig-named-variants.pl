@@ -13,13 +13,15 @@ pass that around as single C<Ref>.
 
 =cut
 
-use v5.24;
+use v5.28;
 
 use FindBin;
 use lib "$FindBin::Bin/lib";
 
-use feature qw(signatures);
-use experimental 'signatures';
+use Syntax::Construct qw(state-array);
+use stable v0.032 qw(postderef);
+use experimental qw(signatures);
+
 use Function::Parameters v2;
 use Type::Params -sigs;
 
@@ -64,12 +66,12 @@ sub dump_color_base_perl_slurpy_hash(
 	) {
 
 	state $container_type = MyColorRGBA;
-	state $keys = [ pairkeys( $container_type->find_parent(sub { $_->has_parameters })->parameters->@* ) ];
-	# $keys = [ qw(red green blue alpha) ]
+	state @keys = pairkeys( $container_type->find_parent(sub { $_->has_parameters })->parameters->@* );
+	# @keys = qw(red green blue alpha)
 	%color = $container_type->assert_coerce(\%color)->%*;
 
 	_dump_color_driver([
-		map { uc substr($_,0,1) => $color{$_} } @$keys
+		map { uc substr($_,0,1) => $color{$_} } @keys
 	]);
 }
 
@@ -92,12 +94,12 @@ fun dump_color_func_params_slurpy_hash(
 	) {
 
 	state $container_type = MyColorRGBA;
-	state $keys = [ pairkeys( $container_type->find_parent(sub { $_->has_parameters })->parameters->@* ) ];
-	# $keys = [ qw(red green blue alpha) ]
+	state @keys = pairkeys( $container_type->find_parent(sub { $_->has_parameters })->parameters->@* );
+	# @keys =  qw(red green blue alpha)
 	%color = $container_type->assert_coerce(\%color)->%*;
 
 	_dump_color_driver([
-		map { uc substr($_,0,1) => $color{$_} } @$keys
+		map { uc substr($_,0,1) => $color{$_} } @keys
 	]);
 }
 
@@ -118,8 +120,8 @@ fun dump_color_func_params_named_params(
 	) {
 
 	state $info = Function::Parameters::info(__SUB__);
-	state $vars = [ map { $_->name } $info->named_required, $info->named_optional ];
-	# $vars = [ qw($red $green $blue $alpha) ]
+	state @vars = map { $_->name } $info->named_required, $info->named_optional;
+	# @vars = qw($red $green $blue $alpha)
 
 	my $pad = peek_my(0);
 	_dump_color_driver([
@@ -127,7 +129,7 @@ fun dump_color_func_params_named_params(
 			uc substr($_,1,1) =>
 			# Yes, this is bad...
 			$pad->{$_}->$*
-		} @$vars
+		} @vars
 	]);
 }
 
@@ -146,11 +148,11 @@ signature_for dump_color_type_params_slurpy_hash => (
 	pos => [ Slurpy[ $container_type ] ]
 );
 sub dump_color_type_params_slurpy_hash( $color )  {
-	state $keys = [ pairkeys( $container_type->find_parent(sub { $_->has_parameters })->parameters->@* ) ];
-	# $keys = [ qw(red green blue alpha) ]
+	state @keys = pairkeys( $container_type->find_parent(sub { $_->has_parameters })->parameters->@* );
+	# @keys = qw(red green blue alpha)
 
 	_dump_color_driver([
-		map { uc substr($_,0,1) => $color->{$_} } @$keys
+		map { uc substr($_,0,1) => $color->{$_} } @keys
 	]);
 }
 }
@@ -176,11 +178,11 @@ signature_for dump_color_type_params_named_params => (
 	bless => !!1,
 );
 sub dump_color_type_params_named_params( $args )  {
-	state $keys = [ pairkeys @$named ];
-	# $keys = [ qw(red green blue alpha) ]
+	state @keys = pairkeys @$named;
+	# @keys = qw(red green blue alpha)
 
 	_dump_color_driver([
-		map { uc substr($_,0,1) => $args->{$_} } @$keys
+		map { uc substr($_,0,1) => $args->{$_} } @keys
 	]);
 }
 }
