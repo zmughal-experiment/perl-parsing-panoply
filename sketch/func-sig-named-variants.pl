@@ -185,6 +185,34 @@ sub dump_color_type_params_named_params( $args )  {
 }
 }
 
+=head2 dump_color_moox_struct_slurpy_hash
+
+This uses a slurpy hash, but puts it into a L<MooX::Struct> object (which uses
+a blessed C<ArrayRef>). Since these parameters do go together, they are better
+stored in a single object.
+
+This does not use the C<MyColorRGBA> C<Type::Tiny> check for coercion.
+
+=cut
+use MooX::Struct -retain =>
+	MyColorRGBA_Struct => [
+		'red!'   => [ isa => ColorElem8 ],
+		'green!' => [ isa => ColorElem8 ],
+		'blue!'  => [ isa => ColorElem8 ],
+		alpha    => [ isa => ColorElem8, default => (1<<8)-1 ],
+
+		_dump_color_driver_args => sub {
+			map { uc substr($_,0,1) => $_[0]->{$_} } $_[0]->FIELDS
+		}
+	];
+fun dump_color_moox_struct_slurpy_hash( %color )  {
+	my $_color = MyColorRGBA_Struct->new( %color );
+
+	_dump_color_driver([
+		$_color->_dump_color_driver_args
+	]);
+}
+
 fun run_dump( CodeRef $cb ) {
 	say "@{[ '='x80 ]}\nUsing @{[ subname($cb) ]}";
 
@@ -215,6 +243,8 @@ sub main {
 	run_dump( \&dump_color_type_params_slurpy_hash );
 
 	run_dump( \&dump_color_type_params_named_params );
+
+	run_dump( \&dump_color_moox_struct_slurpy_hash );
 }
 
 main;
