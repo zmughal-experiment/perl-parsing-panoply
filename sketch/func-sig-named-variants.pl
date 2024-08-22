@@ -130,6 +130,44 @@ sub dump_color_type_params_slurpy_hash( $color )  {
 }
 }
 
+=head2 dump_color_type_params_named_params
+
+Uses L<Type::Params> to define signature types with named parameters.
+
+Introspection of signature not possible here since L<Type::Params> only works
+with C<CodeRef>s.
+
+=cut
+{
+# Stored here for introspection while keeping the order.
+my $named = [
+	red   => ColorElem8,
+	green => ColorElem8,
+	blue  => ColorElem8,
+	alpha => ColorElem8, { default => (1<<8)-1 },
+];
+signature_for dump_color_type_params_named_params => (
+	named => $named,
+	bless => !!1,
+);
+sub dump_color_type_params_named_params( $args )  {
+	state $keys = do {
+		my @_keys;
+		my $idx = 0;
+		while( $idx < $named->@* ) {
+			push @_keys, $named->[$idx++];
+			$idx++; # skip type
+			$idx++ if ref $named->[$idx] eq 'HASH';
+		}
+		\@_keys;
+	};
+	# $keys = [ qw(red green blue alpha) ]
+
+	_dump_color_driver([
+		map { uc substr($_,0,1) => $args->{$_} } @$keys
+	]);
+}
+}
 
 fun run_dump( CodeRef $cb ) {
 	say "@{[ '='x80 ]}\nUsing @{[ subname($cb) ]}";
@@ -157,6 +195,8 @@ sub main {
 	run_dump( \&dump_color_func_params_named_params );
 
 	run_dump( \&dump_color_type_params_slurpy_hash );
+
+	run_dump( \&dump_color_type_params_named_params );
 }
 
 main;
