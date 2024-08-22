@@ -27,9 +27,10 @@ Type::Libraries->setup_class(
 	)
 );
 
+my $ColorElem8_max = 255;
 my $ColorElem8 =
 declare ColorElem8 =>
-	as IntRange[0,255];
+	as IntRange[0,$ColorElem8_max];
 
 my @rgb_keys = qw(red green blue);
 my $alpha_key = q'alpha';
@@ -50,7 +51,7 @@ my $ColorRGBA32OptAlpha =
 declare_coercion ColorRGBA32OptAlpha =>
 	to_type 'ColorRGBA32',
 	from 'ColorRGB24',
-	q{ +{ %$_, alpha => 255 } };
+	qq{ +{ %\$_, ${alpha_key} => ${ColorElem8_max} } };
 
 declare 'MyColorRGBA',
 	as $ColorRGBA32->plus_coercions($ColorRGBA32OptAlpha),
