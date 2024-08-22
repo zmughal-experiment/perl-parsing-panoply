@@ -14,13 +14,13 @@ use lib "$FindBin::Bin/lib";
 
 use feature qw(signatures);
 use experimental 'signatures';
-use Function::Parameters;
+use Function::Parameters v2;
 use Type::Params -sigs;
 
 use PadWalker qw(peek_my);
-use Sub::Identify qw(sub_name);
+use Sub::Util v1.40 qw(subname);
 
-use List::Util qw(pairkeys);
+use List::Util v1.29 qw(pairkeys pairmap);
 
 use Local::Type::Color qw(
 	Slurpy
@@ -28,9 +28,25 @@ use Local::Type::Color qw(
 	Any
 	ColorElem8
 	MyColorRGBA
+
+	CycleTuple
+	StrLength
+	Int
+	ArrayRef
 );
 
 =head1 FUNCTIONS
+
+=cut
+
+fun _dump_color_driver( (ArrayRef[Any,(4*2)x2] & CycleTuple[StrLength[1,1],ColorElem8] ) $pairs ) {
+	say "Color: [ "
+		. join(", ",
+			pairmap { sprintf("%s: 0x%02X", $a, $b) }
+			@$pairs )
+		. " ]";
+
+}
 
 =head2 dump_color_func_params_slurpy_hash
 
@@ -55,13 +71,9 @@ fun dump_color_func_params_slurpy_hash(
 	# $keys = [ qw(red green blue alpha) ]
 	%color = $container_type->assert_coerce(\%color)->%*;
 
-	say "Color: [ "
-		. join(", ",
-			map { sprintf("%s: 0x%02X",
-				uc substr($_,0,1),
-				$color{$_}) }
-			@$keys )
-		. " ]";
+	_dump_color_driver([
+		map { uc substr($_,0,1) => $color{$_} } @$keys
+	]);
 }
 
 =head2 dump_color_func_params_named_params
@@ -85,13 +97,13 @@ fun dump_color_func_params_named_params(
 	# $vars = [ qw($red $green $blue $alpha) ]
 
 	my $pad = peek_my(0);
-	say "Color: [ "
-		. join(", ", map { sprintf("%s: 0x%02X",
-				uc substr($_,1,1),
-				# Yes, this is bad...
-				$pad->{$_}->$* )
-			} @$vars )
-		. " ]";
+	_dump_color_driver([
+		map {
+			uc substr($_,1,1) =>
+			# Yes, this is bad...
+			$pad->{$_}->$*
+		} @$vars
+	]);
 }
 
 =head2 dump_color_type_params_slurpy_hash
@@ -112,19 +124,15 @@ sub dump_color_type_params_slurpy_hash( $color )  {
 	state $keys = [ pairkeys( $container_type->find_parent(sub { $_->has_parameters })->parameters->@* ) ];
 	# $keys = [ qw(red green blue alpha) ]
 
-	say "Color: [ "
-		. join(", ",
-			map { sprintf("%s: 0x%02X",
-				uc substr($_,0,1),
-				$color->{$_}) }
-			@$keys )
-		. " ]";
+	_dump_color_driver([
+		map { uc substr($_,0,1) => $color->{$_} } @$keys
+	]);
 }
 }
 
 
 fun run_dump( CodeRef $cb ) {
-	say "@{[ '='x80 ]}\nUsing @{[ sub_name($cb) ]}";
+	say "@{[ '='x80 ]}\nUsing @{[ subname($cb) ]}";
 
 	my $fmt = "%45s: ";
 	print sprintf($fmt, "Optional alpha");
