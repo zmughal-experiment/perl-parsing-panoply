@@ -141,26 +141,17 @@ with C<CodeRef>s.
 {
 # Stored here for introspection while keeping the order.
 my $named = [
-	red   => ColorElem8,
-	green => ColorElem8,
-	blue  => ColorElem8,
-	alpha => ColorElem8, { default => (1<<8)-1 },
+	red   => [ ColorElem8 ],
+	green => [ ColorElem8 ],
+	blue  => [ ColorElem8 ],
+	alpha => [ ColorElem8, { default => (1<<8)-1 } ],
 ];
 signature_for dump_color_type_params_named_params => (
-	named => $named,
+	named => [ pairmap { $a => @$b } @$named ],
 	bless => !!1,
 );
 sub dump_color_type_params_named_params( $args )  {
-	state $keys = do {
-		my @_keys;
-		my $idx = 0;
-		while( $idx < $named->@* ) {
-			push @_keys, $named->[$idx++];
-			$idx++; # skip type
-			$idx++ if ref $named->[$idx] eq 'HASH';
-		}
-		\@_keys;
-	};
+	state $keys = [ pairkeys @$named ];
 	# $keys = [ qw(red green blue alpha) ]
 
 	_dump_color_driver([
