@@ -216,7 +216,7 @@ fun dump_color_moox_struct_slurpy_hash( %color )  {
 fun run_dump( CodeRef $cb ) {
 	say "@{[ '='x80 ]}\nUsing @{[ subname($cb) ]}";
 
-	my $fmt = "%45s: ";
+	my $fmt = "%60s: ";
 	print sprintf($fmt, "Optional alpha");
 	$cb->( red => 255, green => 50, blue => 100 );
 
@@ -228,6 +228,9 @@ fun run_dump( CodeRef $cb ) {
 
 	eval { $cb->( red => 255 ); 1 }
 		or warn sprintf("$fmt%s", "Expect failure from missing green and blue", $@ =~ /(.*)/);
+
+	eval { $cb->( red => 255, groen => 1, bleu => 65 ); 1 }
+		or warn sprintf("$fmt%s", "Expect failure from missing green and blue (typo, thinko)", $@ =~ /(.*)/);
 
 	eval { $cb->( red => 1024, green => 1024, blue => 1024 ); 1 }
 		or warn sprintf("$fmt%s", "Expect failure from out of bounds values", $@ =~ /(.*)/);
