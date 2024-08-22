@@ -1,5 +1,12 @@
 #!/usr/bin/env perl
 
+=head1 DESCRIPTION
+
+Demonstrate different ways of working with named parameters while knowing what
+the keys/variables are from inside of the function body.
+
+=cut
+
 use v5.24;
 
 use FindBin;
@@ -25,7 +32,7 @@ use Local::Type::Color qw(
 
 =head1 FUNCTIONS
 
-=head2 dump_color_slurpy_hash
+=head2 dump_color_func_params_slurpy_hash
 
 Using L<Function::Parameters> with slurpy value then uses coercion over the
 whole container inside of the function body.
@@ -39,13 +46,13 @@ The container type is introspected to find the keys.
 This differs from L<Type::Params>. See L</dump_color_type_params_slurpy_hash>.
 
 =cut
-fun dump_color_slurpy_hash(
+fun dump_color_func_params_slurpy_hash(
 		ColorElem8 %color
 	) {
 
 	state $container_type = MyColorRGBA;
 	state $keys = [ pairkeys( $container_type->find_parent(sub { $_->has_parameters })->parameters->@* ) ];
-	# $keys = qw(red green blue alpha)
+	# $keys = [ qw(red green blue alpha) ]
 	%color = $container_type->assert_coerce(\%color)->%*;
 
 	say "Color: [ "
@@ -57,7 +64,7 @@ fun dump_color_slurpy_hash(
 		. " ]";
 }
 
-=head2 dump_color_named_params
+=head2 dump_color_func_params_named_params
 
 Using L<Function::Parameters> with named parameters.
 
@@ -66,7 +73,7 @@ Assumes that the order needed for output is required parameters followed by
 optional parameters.
 
 =cut
-fun dump_color_named_params(
+fun dump_color_func_params_named_params(
 		ColorElem8 :$red,
 		ColorElem8 :$green,
 		ColorElem8 :$blue,
@@ -75,7 +82,7 @@ fun dump_color_named_params(
 
 	state $info = Function::Parameters::info(__SUB__);
 	state $vars = [ map { $_->name } $info->named_required, $info->named_optional ];
-	# $vars = qw($red $green $blue $alpha)
+	# $vars = [ qw($red $green $blue $alpha) ]
 
 	my $pad = peek_my(0);
 	say "Color: [ "
@@ -103,7 +110,7 @@ signature_for dump_color_type_params_slurpy_hash => (
 );
 sub dump_color_type_params_slurpy_hash( $color )  {
 	state $keys = [ pairkeys( $container_type->find_parent(sub { $_->has_parameters })->parameters->@* ) ];
-	# $keys = qw(red green blue alpha)
+	# $keys = [ qw(red green blue alpha) ]
 
 	say "Color: [ "
 		. join(", ",
@@ -137,9 +144,9 @@ fun run_dump( CodeRef $cb ) {
 }
 
 sub main {
-	run_dump( \&dump_color_slurpy_hash );
+	run_dump( \&dump_color_func_params_slurpy_hash );
 
-	run_dump( \&dump_color_named_params );
+	run_dump( \&dump_color_func_params_named_params );
 
 	run_dump( \&dump_color_type_params_slurpy_hash );
 }
