@@ -31,7 +31,8 @@ Using L<Function::Parameters> with slurpy value then uses coercion over the
 whole container inside of the function body.
 
 NOTE: Using C<< ColorElem8 >> here because slurpy types are not checked as
-refs by L<Function::Parameters>, but by their values.
+C<ArrayRef>s or C<HashRef>s by L<Function::Parameters>, but by
+the elements or values of the containers.
 
 The container type is introspected to find the keys.
 
@@ -43,7 +44,7 @@ fun dump_color_slurpy_hash(
 	) {
 
 	state $container_type = MyColorRGBA;
-	state $keys = [ pairkeys( $container_type->parent->parent->parent->parameters->@* ) ];
+	state $keys = [ pairkeys( $container_type->find_parent(sub { $_->has_parameters })->parameters->@* ) ];
 	# $keys = qw(red green blue alpha)
 	%color = $container_type->assert_coerce(\%color)->%*;
 
@@ -94,13 +95,14 @@ Introspection of signature not possible here since L<Type::Params> only works
 with C<CodeRef>s.
 
 =cut
+{
+# no introspection of signature :-(
+my $container_type = MyColorRGBA;
 signature_for dump_color_type_params_slurpy_hash => (
-	pos => [ Slurpy[ MyColorRGBA ] ]
+	pos => [ Slurpy[ $container_type ] ]
 );
 sub dump_color_type_params_slurpy_hash( $color )  {
-	# no introspection of signature :-(
-	state $container_type = MyColorRGBA;
-	state $keys = [ pairkeys( $container_type->parent->parent->parent->parameters->@* ) ];
+	state $keys = [ pairkeys( $container_type->find_parent(sub { $_->has_parameters })->parameters->@* ) ];
 	# $keys = qw(red green blue alpha)
 
 	say "Color: [ "
@@ -110,6 +112,7 @@ sub dump_color_type_params_slurpy_hash( $color )  {
 				$color->{$_}) }
 			@$keys )
 		. " ]";
+}
 }
 
 
