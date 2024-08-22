@@ -234,17 +234,21 @@ fun run_dump( CodeRef $cb ) {
 }
 
 sub main {
-	run_dump( \&dump_color_base_perl_slurpy_hash );
+	for my $cb (
+		\&dump_color_base_perl_slurpy_hash,
 
-	run_dump( \&dump_color_func_params_slurpy_hash );
+		\&dump_color_func_params_slurpy_hash,
 
-	run_dump( \&dump_color_func_params_named_params );
+		\&dump_color_func_params_named_params,
 
-	run_dump( \&dump_color_type_params_slurpy_hash );
+		\&dump_color_type_params_slurpy_hash,
 
-	run_dump( \&dump_color_type_params_named_params );
+		\&dump_color_type_params_named_params,
 
-	run_dump( \&dump_color_moox_struct_slurpy_hash );
+		\&dump_color_moox_struct_slurpy_hash,
+	) {
+		run_dump( $cb );
+	}
 }
 
 main;
