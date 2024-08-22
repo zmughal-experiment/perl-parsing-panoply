@@ -48,6 +48,25 @@ fun _dump_color_driver( (ArrayRef[Any,(4*2)x2] & CycleTuple[StrLength[1,1],Color
 
 }
 
+=head2 dump_color_base_perl_slurpy_hash
+
+Uses base Perl signatures with C<Type::Tiny> coercion inside.
+
+=cut
+sub dump_color_base_perl_slurpy_hash(
+		%color
+	) {
+
+	state $container_type = MyColorRGBA;
+	state $keys = [ pairkeys( $container_type->find_parent(sub { $_->has_parameters })->parameters->@* ) ];
+	# $keys = [ qw(red green blue alpha) ]
+	%color = $container_type->assert_coerce(\%color)->%*;
+
+	_dump_color_driver([
+		map { uc substr($_,0,1) => $color{$_} } @$keys
+	]);
+}
+
 =head2 dump_color_func_params_slurpy_hash
 
 Using L<Function::Parameters> with slurpy value then uses coercion over the
@@ -181,6 +200,8 @@ fun run_dump( CodeRef $cb ) {
 }
 
 sub main {
+	run_dump( \&dump_color_base_perl_slurpy_hash );
+
 	run_dump( \&dump_color_func_params_slurpy_hash );
 
 	run_dump( \&dump_color_func_params_named_params );
