@@ -5,6 +5,12 @@
 Demonstrate different ways of working with named parameters while knowing what
 the keys/variables are from inside of the function body.
 
+Note that this example using colors may not be ideal for showing the named
+parameters feature as parameters are not always related to each other in terms
+of sharing types. In particular, RGB elements represent different dimensions of
+an RGB cube, so it would be better to create an C<Object> or C<ArrayRef> and
+pass that around as single C<Ref>.
+
 =cut
 
 use v5.24;
