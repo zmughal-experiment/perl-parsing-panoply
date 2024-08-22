@@ -27,7 +27,7 @@ Type::Libraries->setup_class(
 	)
 );
 
-my $ColorElem8_max = 255;
+my $ColorElem8_max = (1<<8)-1;
 my $ColorElem8 =
 declare ColorElem8 =>
 	as IntRange[0,$ColorElem8_max];

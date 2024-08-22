@@ -89,7 +89,7 @@ fun dump_color_func_params_named_params(
 		ColorElem8 :$red,
 		ColorElem8 :$green,
 		ColorElem8 :$blue,
-		ColorElem8 :$alpha = 255
+		ColorElem8 :$alpha = (1<<8)-1
 	) {
 
 	state $info = Function::Parameters::info(__SUB__);
