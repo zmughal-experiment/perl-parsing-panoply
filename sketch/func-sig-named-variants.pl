@@ -48,12 +48,10 @@ use Local::Type::Color qw(
 =cut
 
 fun _dump_color_driver( (ArrayRef[Any,(4*2)x2] & CycleTuple[StrLength[1,1],ColorElem8] ) $pairs ) {
-	say "Color: [ "
-		. join(", ",
+	say sprintf "Color: [ %s ]",
+		join(", ",
 			pairmap { sprintf("%s: 0x%02X", $a, $b) }
-			@$pairs )
-		. " ]";
-
+			@$pairs );
 }
 
 =head2 dump_color_base_perl_slurpy_hash
