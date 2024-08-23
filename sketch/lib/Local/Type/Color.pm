@@ -15,6 +15,7 @@ use Type::Library 0.008 -base,
 		MyColorRGBA
 	)];
 use Type::Utils -all;
+use Data::Dumper ();
 
 # Listed here so that scan-perl-deps can find them
 use Types::Common        qw(IntRange Dict Optional);
@@ -47,11 +48,14 @@ declare ColorRGBA32 => as
 	];
 
 # Default alpha to opaque when coerced from ColorRGB24.
+my $alpha_key_perl_code = Data::Dumper->new([
+		{ $alpha_key => $ColorElem8_max }
+	])->Indent(0)->Terse(1)->Dump =~ s/\A\{|\}\z//sgr;
 my $ColorRGBA32OptAlpha =
 declare_coercion ColorRGBA32OptAlpha =>
 	to_type 'ColorRGBA32',
 	from 'ColorRGB24',
-	qq{ +{ %\$_, ${alpha_key} => ${ColorElem8_max} } };
+	qq{ +{ %\$_, ${alpha_key_perl_code} } };
 
 declare 'MyColorRGBA',
 	as $ColorRGBA32->plus_coercions($ColorRGBA32OptAlpha),
