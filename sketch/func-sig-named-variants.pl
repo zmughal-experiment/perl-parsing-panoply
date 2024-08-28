@@ -22,7 +22,6 @@ use Syntax::Construct qw(state-array);
 use stable v0.032 qw(postderef);
 use experimental qw(signatures);
 
-use Function::Parameters v2;
 use Type::Params -sigs;
 
 use PadWalker qw(peek_my);
@@ -47,11 +46,14 @@ use Local::Type::Color qw(
 
 =cut
 
+{
+use Function::Parameters v2;
 fun _dump_color_driver( (ArrayRef[Any,(4*2)x2] & CycleTuple[StrLength[1,1],ColorElem8] ) $pairs ) {
 	say sprintf "Color: [ %s ]",
 		join(", ",
 			pairmap { sprintf("%s: 0x%02X", $a, $b) }
 			@$pairs );
+}
 }
 
 =head2 dump_color_base_perl_slurpy_hash
@@ -87,6 +89,8 @@ The container type is introspected to find the keys.
 This differs from L<Type::Params>. See L</dump_color_type_params_slurpy_hash>.
 
 =cut
+{
+use Function::Parameters v2;
 fun dump_color_func_params_slurpy_hash(
 		ColorElem8 %color
 	) {
@@ -100,6 +104,7 @@ fun dump_color_func_params_slurpy_hash(
 		map { uc substr($_,0,1) => $color{$_} } @keys
 	]);
 }
+}
 
 =head2 dump_color_func_params_named_params
 
@@ -110,6 +115,8 @@ Assumes that the order needed for output is required parameters followed by
 optional parameters.
 
 =cut
+{
+use Function::Parameters v2;
 fun dump_color_func_params_named_params(
 		ColorElem8 :$red,
 		ColorElem8 :$green,
@@ -129,6 +136,7 @@ fun dump_color_func_params_named_params(
 			$pad->{$_}->$*
 		} @vars
 	]);
+}
 }
 
 =head2 dump_color_type_params_slurpy_hash
@@ -205,7 +213,7 @@ use MooX::Struct -retain =>
 			map { uc substr($_,0,1) => $_[0]->{$_} } $_[0]->FIELDS
 		}
 	];
-fun dump_color_moox_struct_slurpy_hash( %color )  {
+sub dump_color_moox_struct_slurpy_hash( %color )  {
 	my $_color = MyColorRGBA_Struct->new( %color );
 
 	_dump_color_driver([
@@ -213,6 +221,8 @@ fun dump_color_moox_struct_slurpy_hash( %color )  {
 	]);
 }
 
+{
+use Function::Parameters v2;
 fun run_dump( CodeRef $cb ) {
 	say "@{[ '='x80 ]}\nUsing @{[ subname($cb) ]}";
 
@@ -234,6 +244,7 @@ fun run_dump( CodeRef $cb ) {
 
 	eval { $cb->( red => 1024, green => 1024, blue => 1024 ); 1 }
 		or warn sprintf("$fmt%s", "Expect failure from out of bounds values", $@ =~ /(.*)/);
+}
 }
 
 sub main {
