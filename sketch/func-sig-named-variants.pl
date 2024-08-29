@@ -128,13 +128,10 @@ fun dump_color_func_params_named_params(
 	state @vars = map { $_->name } $info->named_required, $info->named_optional;
 	# @vars = qw($red $green $blue $alpha)
 
+	# Yes, this is bad...
 	my $pad = peek_my(0);
 	_dump_color_driver([
-		map {
-			uc substr($_,1,1) =>
-			# Yes, this is bad...
-			$pad->{$_}->$*
-		} @vars
+		map { uc substr($_,1,1) => $pad->{$_}->$* } @vars
 	]);
 }
 }
