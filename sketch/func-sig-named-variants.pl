@@ -218,6 +218,67 @@ sub dump_color_moox_struct_slurpy_hash( %color )  {
 	]);
 }
 
+=head2 dump_color_kavorka_slurpy_hash
+
+Uses L<Kavorka> to define a subroutine with a slurpy hash
+parameter.
+
+Note that the input is slurpy (a hash) and placed into a C<HashRef> container
+which is checked and coerced all in the signature. As opposed to the approach
+in L<Function::Parameters> at L</dump_color_func_params_slurpy_hash>, the whole
+container type is used rather than just the values.
+
+The signature is then introspected to get the keys.
+
+Also note that the introspection provides all the parameters in order in a
+single list instead of splitting into C<named_required> and C<named_optional>.
+
+=cut
+{
+use Kavorka;
+fun dump_color_kavorka_slurpy_hash ( MyColorRGBA $color is slurpy does coerce ) {
+	state $info = Kavorka->info(__SUB__);
+	state $container_type = $info->signature->params->[0]->type;
+	state @keys = pairkeys( $container_type->find_parent(sub { $_->has_parameters })->parameters->@* );
+
+	_dump_color_driver([
+		map { uc substr($_, 0, 1) => $color->{$_} } @keys
+	]);
+}
+}
+
+=head2 dump_color_kavorka_named_params
+
+Uses L<Kavorka> to define a subroutine with named parameters.
+
+The signature is then introspected to get the variables.
+
+Note that the named parameters without defaults must be marked as required via
+a postfix C<!> otherwise they can be C<undef> despite the type not being
+C<Maybe[ColorElem8]>.
+
+=cut
+{
+use Kavorka;
+fun dump_color_kavorka_named_params(
+		ColorElem8 :$red!,
+		ColorElem8 :$green!,
+		ColorElem8 :$blue!,
+		ColorElem8 :$alpha = (1<<8)-1
+	) {
+
+	state $info = Kavorka->info(__SUB__);
+	state @vars = map { $_->name } $info->signature->params->@*;
+	# @vars = qw($red $green $blue $alpha)
+
+	# Yes, this is bad...
+	my $pad = peek_my(0);
+	_dump_color_driver([
+		map { uc substr($_,1,1) => $pad->{$_}->$* } @vars
+	]);
+}
+}
+
 {
 use Function::Parameters v2;
 fun run_dump( CodeRef $cb ) {
@@ -257,6 +318,10 @@ sub main {
 		\&dump_color_type_params_named_params,
 
 		\&dump_color_moox_struct_slurpy_hash,
+
+		\&dump_color_kavorka_slurpy_hash,
+
+		\&dump_color_kavorka_named_params,
 	) {
 		run_dump( $cb );
 	}
