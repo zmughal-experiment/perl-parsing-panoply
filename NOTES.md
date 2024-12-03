@@ -280,6 +280,8 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/with> (deprecated)
     * <https://metacpan.org/pod/Scope::With>
         + depends on <https://metacpan.org/release/CHOCOLATE/mysubs-1.14> (on BackPAN only)
+- FIRST/NEXT in loops
+    * <https://metacpan.org/pod/Loop::Control>
 - Changing `goto`: <https://metacpan.org/pod/Goto::Cached>
 - Aspect-oriented programming
     * <https://metacpan.org/pod/Aspect>
