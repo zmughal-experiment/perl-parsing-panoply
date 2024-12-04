@@ -283,6 +283,10 @@ change how the code is interpreted. They might be implemented as keywords.
 - FIRST/NEXT in loops
     * <https://metacpan.org/pod/Loop::Control>
 - Changing `goto`: <https://metacpan.org/pod/Goto::Cached>
+- For-else:
+    * <https://blogs.perl.org/users/morandimus/2017/02/else-clauses-on-loops.html>
+    * <https://metacpan.org/pod/For::Else>
+    * <https://metacpan.org/pod/IfLoop>
 - Aspect-oriented programming
     * <https://metacpan.org/pod/Aspect>
     * <https://metacpan.org/pod/Class::Method::Modifiers>
