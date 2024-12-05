@@ -541,6 +541,7 @@ Decompilation:
 - <https://metacpan.org/pod/Scope::local_OnExit>
 - <https://metacpan.org/pod/Sub::ScopeFinalizer>
 - <https://metacpan.org/pod/Value::Canary>
+- <https://metacpan.org/pod/Variable::OnDestruct>
 
 # Importing into caller
 
