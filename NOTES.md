@@ -330,6 +330,7 @@ change how the code is interpreted. They might be implemented as keywords.
     * <https://metacpan.org/pod/LV>
     * <https://metacpan.org/pod/Sub::Lvalue>
     * <https://metacpan.org/pod/Sentinel>
+    * <https://metacpan.org/pod/Context::Preserve>
 - autoboxing
     * <https://metacpan.org/pod/autobox>
     * <https://metacpan.org/pod/autobox::Core>
