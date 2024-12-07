@@ -627,6 +627,7 @@ Decompilation:
 - Ordered hash
     * <https://metacpan.org/pod/Hash::Ordered>
     * <https://metacpan.org/pod/Tie::IxHash>
+- <https://metacpan.org/pod/Acme::CPANModules::ModifiedHashes>
 
 # Parsing / recognising
 
