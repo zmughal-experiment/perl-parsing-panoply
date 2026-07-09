@@ -505,6 +505,7 @@ Decompilation:
 - <https://metacpan.org/pod/Sub::Mutate>
 
 - <https://metacpan.org/pod/Perl::Phase>
+- <https://perldoc.perl.org/variables/$%7B%5EGLOBAL_PHASE%7D>
 
 # Changing semantics
 
